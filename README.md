@@ -18,7 +18,7 @@
 | Name | Student ID | GitHub Username | Role |
 |---|---|---|---|
 | 谢美美 | 1820262040 | @[...] | [...] |
-| AL-HATTAMI HAMID SALEEM NAEL | 1820262063 | @[...] | [...] |
+| AL-HATTAMI HAMID SALEEM NAEL | 1820262063 | @alhattamihami7-ops | [...] |
 | 梁启德 | 1820262075 | @[...] | [...] |
 | KHO EDUARD | 1820262087 | @Infektt  | [...] |
 | HAKAMI QASEM NABIL QASEM | 1820262088 | @[...] | [...] |
