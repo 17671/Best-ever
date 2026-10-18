@@ -22,7 +22,7 @@
 | 梁启德 | 1820262075 | @[...] | [...] |
 | KHO EDUARD | 1820262087 | @Infektt  | [...] |
 | HAKAMI QASEM NABIL QASEM | 1820262088 | @[...] | [...] |
-| MARGARIT SERBAN ALEXANDRU | 1820262117 | @[...] | [...] |
+| MARGARIT SERBAN ALEXANDRU | 1820262117 | @17671 | Content lead: checks scope, structure, and explanations. |
 | KHOJANOVA ALINA | 1820262100 | @[...] | [...] |
 
 
