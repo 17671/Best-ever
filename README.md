@@ -17,7 +17,7 @@
 ## Team & Roles
 | Name | Student ID | GitHub Username | Role |
 |---|---|---|---|
-| 谢美美 | 1820262040 | @[...] | [...] |
+| 谢美美 | 1820262040 | @[lxnawnk] | [Video lead : coordinates recording and editing] |
 | AL-HATTAMI HAMID SALEEM NAEL | 1820262063 | @alhattamihami7-ops | [...] |
 | 梁启德 | 1820262075 | @[...] | [...] |
 | KHO EDUARD | 1820262087 | @Infektt  | [...] |
