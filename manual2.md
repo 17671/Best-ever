@@ -39,13 +39,13 @@ Click **Publish Branch** (or Push). Then:
 1. Click the **GitHub Pull Requests** icon on the left.
 2. Click **Create Pull Request**.
 
-![alt text](dd5e4859-0d1d-416b-8eda-147dbcb8e303.png)
+![](assets/manual/manual-pull-requests-1.png)
 
 3. Add a title and description, assignee (yourself), reviewers (commonly Quality Lead, but some documents should add content lead as well), label (which are discussed in ***6. How to use GitHub Issues (Web Interface)***) and request a teammate to review it. 
 
-![alt text](83914962-f41c-4bd7-b5c9-97fcae461a04.png)
+![](assets/manual/manual-pull-requests-2.png)
 
-![alt text](1ccc943c-cb0c-4c73-afcc-36065ddc531a.png)
+![](assets/manual/manual-pull-requests-3.png)
 
 ### Step 5: Review & Merge
 When a teammate approves your PR, click **Merge Pull Request**. 
