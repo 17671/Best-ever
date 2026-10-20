@@ -70,6 +70,41 @@ If you name a file `Draft 1 final FINAL.md`, the team will hate you. Follow thes
 2.  **Be descriptive.** A file named `notes.md` is useless. `symbolic-ai-notes.md` is perfect.
 3.  **Always include the extension.** `.md` for text, `.png`/`.jpg` for images.
 
+### Naming and Linking Images
+
+**1. Where do images go?**
+All images, diagrams, and screenshots must go inside the `/assets/` folder. To keep things organized, we use four specific subfolders:
+- `/assets/visuals/` — Diagrams and charts for the Study Guide and Slides.
+- `/assets/manual-images/` — Screenshots used in this manual.
+- `/assets/work-evidence/` — Screenshots of GitHub PRs, commits, and AI chats.
+- `/assets/meeting-evidence/` — Photos of the team working together.
+
+**2. How to name image files:**
+Just like Markdown files, image names must be descriptive. Follow these rules:
+- **Always use lowercase and hyphens.** (e.g., `cpu-architecture.png`, NOT `CPU Architecture.PNG`).
+- **Be descriptive.** Name it based on what the image actually shows. 
+    - Bad: `image1.png`, `screenshot.jpg`, `photo.png`
+    - Good: `fetch-decode-diagram.png`, `pr-4-merged.png`, `meeting-2026-10-19.jpg`
+- **For evidence, start with the date.** This keeps them sorted chronologically. Format: `YYYY-MM-DD-topic.jpg`.
+- **Always include the correct extension.** (`.png` for diagrams, `.jpg` for photos).
+
+**3. How to link images in Markdown (Relative Paths):**
+When you display an image in a Markdown file, you must use a **relative path**. This tells VS Code exactly how to find the image from the file you are currently editing. 
+
+- **Root files** (like `README.md`): `![](assets/visuals/image.png)`
+- **One folder deep** (like `content/information.md`): `![](../assets/visuals/image.png)`
+- **Two folders deep** (like `logs/meetings/2026-10-19.md`): `![](../../assets/meeting-evidence/image.jpg)`
+
+**Why the `../` works:**
+- `../` means "go up one folder."
+- `../../` means "go up two folders."
+
+**The Ultimate Hack (Don't type the path yourself):**
+To avoid broken links (the dreaded broken image icon), let VS Code write the path for you:
+1. Type `![](` in your markdown file (leave the parentheses open).
+2. Go to the **Explorer** tab on the left, find your image, and **drag and drop it right inside the parentheses** in your text editor.
+3. VS Code will automatically calculate the exact `../` path needed and paste it in perfectly.
+
 ---
 
 ## 4. Understanding Branches & PRs
