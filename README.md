@@ -11,7 +11,7 @@
 - **MARGARIT SERBAN ALEXANDRU** - 1820262117 - @17671 - **Content Lead**
 - **梁启德** - 1820262075 - @Solgitt - **Quality Lead**
 - **谢美美** - 1820262040 - @lxnawnk - **Video Lead**
-- **KHOJANOVA ALINA** - 1820262100 - @ - **Visual Design Lead and Video Lead Helper**
+- **KHOJANOVA ALINA** - 1820262100 - @alinaalinok1532-eng - **Visual Design Lead and Video Lead Helper**
 - **AL-HATTAMI HAMID SALEEM NAEL** - 1820262063 - @alhattamihameed2-collab - **Visual Design Lead**
 
 ## 3. Learning Materials
