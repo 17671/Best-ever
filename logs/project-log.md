@@ -4,7 +4,7 @@
 - **Author:** Alex (Content Lead)
 
 ### Task Completed
-- Created a draft for the first topic, Hardware, in [`/content/hardware-basics.md`](../content/hardware-basics.md).
+- Created a draft for the first topic, Hardware, in [`/content/hardware-basics.md`](../content/hardware.md).
 - Included key terminology, real-life examples, and a historical overview.
 
 ### Result
