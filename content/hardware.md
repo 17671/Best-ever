@@ -1,4 +1,4 @@
-# Topic 1: Introduction to Computers
+# Topic 1: Computer Hardware
 
 ## Introduction
 
