@@ -36,4 +36,4 @@
 - **Stage:** Stage 1 
 - **Completed:** Repository setup, README, Team Manual, and starting task list.
 - **In Progress:** Finishing changes after failing first assignment review.
-- **Remaining:** Stage 1 logs, Contents, PPTs, Topics 2 through 7 are currently **Outline only** and will be researched and drafted in Stage 3. Slide decks and video tutorials will follow after content approval. See our [Module Outline](module-outline.md) for details.
+- **Remaining:** Stage 1 logs, Contents, PPTs, Topics 2 through 7 are currently **Outline only** and will be researched and drafted in Stage 3. Slide decks and video tutorials will follow after content approval. See our [Module Outline](content/module-outline.md) for details.
