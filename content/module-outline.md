@@ -1,7 +1,7 @@
 # PikaByte — Module Topics Outline
 
 ## Topic 1: Computer Hardware Basics
-> **Status:** Waiting for review
+> **Status:** Done
 
 - **Research Focus:** The main physical components of computers and their functions.
 - **Key Concepts:** CPU, GPU, RAM, storage, sensors, input devices, and output devices.
@@ -9,7 +9,7 @@
 - **Example:** How a smart camera captures an image and processes it.
 
 ## Topic 2: Network Basics
-> **Status:** In progress
+> **Status:** Done
 
 - **Research Focus:** How computers and other devices communicate and exchange information.
 - **Key Concepts:** Networks, routers, servers, Wi-Fi, Ethernet, data packets, bandwidth, and latency.
@@ -17,7 +17,7 @@
 - **Example:** How a phone receives information from an online server.
 
 ## Topic 3: Artificial Intelligence Basics
-> **Status:** Outline only
+> **Status:** Under review
 
 - **Research Focus:** The basic principles of AI and how AI models produce results.
 - **Key Concepts:** AI models, training data, inference, predictions, inputs, and outputs.
