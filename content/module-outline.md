@@ -1,4 +1,4 @@
-# Module Topics Outline
+# PikaByte — Module Topics Outline
 
 ## Topic 1: Computer Hardware Basics
 > **Status:** Waiting for review

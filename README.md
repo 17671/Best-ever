@@ -22,7 +22,7 @@
 
 ## 4. Project Tracking
 - **[Project Plan](project-plan.md)** (`project-plan.md`) - The outline of the project with each member's responsibilities, scope, workflow, and schedule.
-- **[Module Outline](content/module-outline.md)** (`module-outline.md`) - The 7 learning topics' outlines and their current development statuses.
+- **[Module Outline](content/module-outline.md)** (`content/module-outline.md`) - The 7 learning topics' outlines and their current development statuses.
 - **[Task List](tasks.md)** (`tasks.md`) - Task descriptions, deadlines and current completion statuses.
 - **[Project Log](/logs/project-log.md)** (`/logs/project-log.md`) - Chronological record of team contributions and evidence.
 - **[Meeting Summaries](/logs/meetings/)** (`/logs/meetings/`) - Meeting dates, locations, topics, and decisions.
