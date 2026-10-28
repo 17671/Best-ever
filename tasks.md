@@ -22,7 +22,7 @@
 - **Owner:** Everyone (Please report to the WeChat group once finished)
 - **Role:** -
 - **Deadline:** Oct 20
-- **Status:** In Progress
+- **Status:** Done
 - **Dependencies:** -
 
 2\) **Task:** Read `manual.md` and `manual2.md`
@@ -30,7 +30,7 @@
 - **Owner:** Everyone (Please report to the WeChat group once finished)
 - **Role:** -
 - **Deadline:** Oct 20
-- **Status:** In Progress
+- **Status:** Done
 - **Dependencies:** -
 
 3\) **Task:** Update README.md
@@ -38,7 +38,7 @@
 - **Owner:** KHO EDUARD 1820262087 (@Infektt)
 - **Role:** CEO
 - **Deadline:** Oct 20
-- **Status:** In Progress
+- **Status:** Done
 - **Dependencies:** -
 
 ## 2. Documentation and planning
@@ -48,7 +48,7 @@
 - **Owner:** KHO EDUARD 1820262087 (@Infektt)
 - **Role:** CEO
 - **Deadline:** Oct 20
-- **Status:** In Progress
+- **Status:** Done
 - **Dependencies:** -
 
 2\) **Task:** Research topic 1
@@ -56,5 +56,5 @@
 - **Owner:** MARGARIT SERBAN ALEXANDRU 1820262117 (@17671)
 - **Role:** Content Lead
 - **Deadline:** Oct 22
-- **Status:** In Progess
+- **Status:** Done
 - **Dependencies:** -
