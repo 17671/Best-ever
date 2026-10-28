@@ -202,7 +202,7 @@ We will deeply explain the foundational concepts in Topics 1, 2, and 3 using eve
 - **Shared Markdown Content:** All explanations, terminology, and examples will be drafted in the `/content/` folder as Markdown files. This serves as our single source of truth.
 - **Study Guide & Test Bank:** The Study Guide will adapt the Markdown into a textbook format, including chapter summaries and a quiz with explained answers at the end of each section.
 - **PPT Slides:** Slides will use visual diagrams (e.g., flowcharts) and short bullet points to support the live lecture.
-- **Video Tutorials:** Short videos (2-3 minutes) will explain the topic and focus on complex concepts or processes that are hard to visualize.
+- **Video Tutorials:** Videos will explain the topic and focus on complex concepts or processes that are hard to visualize.
 
 ## 4. Workflow and Coordination
 
