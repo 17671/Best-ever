@@ -361,3 +361,8 @@ By the end of this chapter, you will be able to:
 
 ---
 
+## References for Research
+
+- Adapted from [MASAKO Team], 2023 Project
+- Adapted from [Panda Team], 2023 Project
+- Adapted from [Technova Team], 2023 Project
