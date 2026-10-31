@@ -120,3 +120,166 @@ By the end of this chapter, you will be able to:
 - **MARIE** is named in Stage 7 as the concrete simple computer.
 - **Chapter exercises** end each stage.
 - **Stage 8** covers emerging hardware trends and leads into the Networks chapters of the module. Networking Fundamentals, Internet Fundamentals, and Security in Networks belong to those later chapters.
+
+## Chapter 2: Networks
+
+### Chapter Overview
+
+A computer network connects two or more computers so they can share data and resources. This chapter covers the parts of a network, the types of network, how the internet works, the OSI model, network security, and emerging trends. Each stage breaks one topic into short steps.
+
+| Term | Meaning |
+| --- | --- |
+| Network | Two or more connected devices that share data |
+| Switch | Connects devices within one local network and forwards data to the right device |
+| Router | Connects separate networks and chooses the path data takes |
+| Packet | A small unit of data sent across a network |
+| IP address | A numeric address that identifies a device on a network |
+| Domain name | A readable name for a website, such as example.com |
+| DNS | The system that converts domain names into IP addresses |
+| URL | The full address of a web resource |
+| Protocol | A set of rules for how devices communicate |
+| Internet | The global network of connected networks |
+| World Wide Web | The collection of pages and resources accessed over the internet |
+
+### Learning Outcomes
+
+By the end of this chapter, you will be able to:
+
+1. Define a computer network and explain why computers are networked.
+2. Identify the common parts of a network and describe what each does.
+3. Distinguish PAN, LAN, MAN, and WAN, and describe the bus, star, ring, and mesh layouts.
+4. Explain how the internet delivers data using TCP/IP, IP addresses, and domain names.
+5. Read a URL and describe what happens between clicking a link and seeing the page.
+6. Describe the seven layers of the OSI model and the job of each.
+7. Explain privacy, authentication, integrity, and nonrepudiation, and match common protections to each.
+8. Recognize emerging trends in networks and how they connect to AI.
+
+---
+
+## Contents
+
+| Stage | Topic |
+| --- | --- |
+| [1](#stage-1-what-is-a-computer-network) | What Is a Computer Network? |
+| [2](#stage-2-network-fundamentals) | Network Fundamentals |
+| [3](#stage-3-internet-fundamentals) | Internet Fundamentals |
+| [4](#stage-4-the-osi-model) | The OSI Model |
+| [5](#stage-5-security-in-networks) | Security in Networks |
+| [6](#stage-6-emerging-trends-in-networks) | Emerging Trends in Networks |
+
+---
+
+## Material
+
+### Stage 1: What Is a Computer Network?
+
+**Goal:** understand what a network is and why computers are connected.
+
+1. **Network overview.** A network is two or more computers connected so they can exchange data.
+2. **Why computers are networked.** To share data, to share resources such as a printer or storage, and to communicate.
+3. **Check yourself.** Name two things you share over a network at home or school.
+
+---
+
+### Stage 2: Network Fundamentals
+
+**Goal:** learn the parts, sizes, and layouts of networks.
+
+1. **Devices.** Computers send and receive data. A server provides services to other computers. A switch connects devices within one local network. A router connects separate networks and chooses the path for data. A modem connects a network to the internet service provider. An access point provides wireless connections.
+2. **Media.** Wired media carry data over cables. Wireless media carry data through radio signals.
+3. **Network interface card.** The component that connects a device to a network.
+4. **Types of network, by size.**
+   - PAN (personal area network): devices around one person, such as a phone and earbuds.
+   - LAN (local area network): one building or site, such as a home, school, or office.
+   - MAN (metropolitan area network): a city or large campus.
+   - WAN (wide area network): a large area such as a country or the world.
+5. **Layouts (topologies).**
+   - Bus: all devices share one main cable.
+   - Star: each device connects to a central device.
+   - Ring: each device connects to two neighbors in a loop.
+   - Mesh: devices connect to many others, so there are several routes.
+6. **Check yourself.** Draw a home network as a star and label the router.
+
+---
+
+### Stage 3: Internet Fundamentals
+
+**Goal:** understand how data travels across the internet and how a web page reaches you.
+
+1. **Internet vs the web.** The internet is the global network of connected networks. The World Wide Web is the collection of pages and resources accessed over it.
+2. **TCP/IP.** TCP splits data into numbered packets, checks that all of them arrive, and puts them back in order. IP adds addresses to each packet and routes it.
+3. **IP addresses.** Every connected device has a numeric address so data knows where to go.
+4. **Domain names and DNS.** Domain names such as example.com are easier to remember than numbers. DNS converts a domain name into an IP address.
+5. **URL, part 1: the parts.** A URL is the full address of a web resource. Example:
+
+   ```text
+   https://www.example.com/menu/pizza
+
+   https            = protocol (the rules used to communicate)
+   www.example.com  = domain name (which server)
+   /menu/pizza      = path (which page on that server)
+   ```
+
+6. **URL, part 2: from click to page.**
+   1. You click a link, which sends a request for a page.
+   2. Your browser asks DNS for the server's IP address.
+   3. Your request travels as packets to that address.
+   4. The server sends the page back as packets.
+   5. Your browser reassembles the packets and shows the page.
+7. **Check yourself.** Explain the difference between a domain name and an IP address in one sentence.
+
+---
+
+### Stage 4: The OSI Model
+
+**Goal:** learn the seven layers that organize network communication.
+
+1. **What a layered model is.** Instead of one large job, network communication is split into seven smaller jobs. Each layer works with the layer above it and the layer below it.
+2. **The seven layers, from top to bottom.**
+
+   | Layer | Job | Examples |
+   | --- | --- | --- |
+   | 7. Application | Gives programs access to network services | Web browsing (HTTP), email |
+   | 6. Presentation | Formats, compresses, and encrypts data | Encryption, character encoding, image formats |
+   | 5. Session | Starts, maintains, and ends conversations between devices | Keeping a login session open |
+   | 4. Transport | Splits data into segments and checks delivery | TCP, UDP |
+   | 3. Network | Addresses data and routes it between networks | IP, routers |
+   | 2. Data link | Delivers data between devices on the same link | Ethernet, Wi-Fi, switches |
+   | 1. Physical | Sends raw bits as electrical, light, or radio signals | Cables, radio signals |
+
+3. **How data moves.** On the sending device, data moves down the layers and each layer adds its own header information. On the receiving device, data moves up the layers and each layer removes its header.
+4. **OSI vs TCP/IP.** OSI is a seven-layer reference model used for teaching and troubleshooting. TCP/IP is the shorter model the internet uses in practice, with fewer layers.
+5. **Check yourself.** Which layer handles addressing, and which layer sends the raw signals?
+
+---
+
+### Stage 5: Security in Networks
+
+**Goal:** learn the four security goals and common ways to protect a network.
+
+1. **Why it matters.** Data crossing a network can be read, faked, or changed by others.
+2. **Privacy (confidentiality).** Keeping data from people who are not allowed to read it. Encryption is the main protection.
+3. **Authentication.** Proving who a user or device is, using passwords, codes, or other proofs.
+4. **Integrity.** Making sure data has not been changed. Checksums and hashes compare data before and after it travels.
+5. **Nonrepudiation.** Preventing someone from denying an action they took. Digital signatures and logs provide evidence.
+6. **Common protections.** A firewall filters network traffic by rules. Encryption makes data unreadable without the key.
+7. **Check yourself.** Match privacy, authentication, integrity, and nonrepudiation to one protection each.
+
+---
+
+### Stage 6: Emerging Trends in Networks
+
+**Goal:** recognize where networks are heading and how that links to AI.
+
+1. **Wireless and mobile.** Newer wireless and mobile networks offer higher speeds and support more connected devices.
+2. **Cloud, Internet of Things, and edge.** Cloud computing provides remote servers over the internet. The Internet of Things connects everyday objects to networks. Edge computing processes data close to where it is produced.
+3. **The bridge to Behaviorist AI.** More connected devices produce more data, which AI systems can learn from. The next chapter covers Behaviorist AI.
+
+---
+
+## Design Notes
+
+- **Plain steps.** Each stage is a short ordered list, in the order a learner needs it.
+- **A check-yourself step ends each stage.**
+- **OSI follows TCP/IP** so learners can compare the two models.
+- **Links to other chapters.** Stage 6 builds on the hardware trends in Chapter 1 and leads into Behaviorist AI.
