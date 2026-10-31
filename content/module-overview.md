@@ -113,13 +113,7 @@ By the end of this chapter, you will be able to:
 
 ---
 
-## Design Notes
 
-- **Stage 1** opens with an introduction to computers, giving learners context before the binary material.
-- **Stage 5** groups components under Input, Output, and Internal hardware, and adds Internal vs External Hardware and a Case Study.
-- **MARIE** is named in Stage 7 as the concrete simple computer.
-- **Chapter exercises** end each stage.
-- **Stage 8** covers emerging hardware trends and leads into the Networks chapters of the module. Networking Fundamentals, Internet Fundamentals, and Security in Networks belong to those later chapters.
 
 ## Chapter 2: Networks
 
@@ -277,9 +271,93 @@ By the end of this chapter, you will be able to:
 
 ---
 
-## Design Notes
+## Chapter 3: Behaviorist AI
 
-- **Plain steps.** Each stage is a short ordered list, in the order a learner needs it.
-- **A check-yourself step ends each stage.**
-- **OSI follows TCP/IP** so learners can compare the two models.
-- **Links to other chapters.** Stage 6 builds on the hardware trends in Chapter 1 and leads into Behaviorist AI.
+### Chapter Overview
+
+This chapter explains how an AI system can learn behavior from experience. You'll start with what Behaviorist AI is and the basics of reinforcement learning (RL). You'll then study Markov Decision Processes (MDPs) and the algorithms built on them. The chapter ends with how these methods are used in robotics and games, real-world applications, and the challenges and limitations of the approach.
+
+### Learning Outcomes
+
+By the end of this chapter, you will be able to:
+
+1. Define Behaviorist AI and describe its basic process with an example.
+2. Explain reinforcement learning in terms of agent, environment, actions, and rewards, and distinguish model-based from model-free learning.
+3. Describe the parts of an MDP (states, actions, rewards, probabilities, policy, value function) and state the Bellman equation.
+4. Explain dynamic programming, value iteration, and policy iteration.
+5. Describe and compare the main RL algorithms (Q-learning, Deep Q-Network, SARSA, policy gradient, actor-critic) and on-policy versus off-policy learning.
+6. Describe how RL is used in robotics and games.
+7. Give examples of real-world applications of Behaviorist AI.
+8. Identify the main challenges and limitations of Behaviorist AI.
+
+---
+
+## Contents
+
+| Stage | Topic |
+| --- | --- |
+| [1](#stage-1-introduction-to-behaviorist-ai) | Introduction to Behaviorist AI |
+| [2](#stage-2-basics-of-reinforcement-learning) | Basics of Reinforcement Learning |
+| [3](#stage-3-markov-decision-processes-mdps) | Markov Decision Processes (MDPs) |
+| [4](#stage-4-rl-algorithms-and-techniques) | RL Algorithms and Techniques |
+| [5](#stage-5-behaviorist-ai-in-robotics-and-games) | Behaviorist AI in Robotics and Games |
+| [6](#stage-6-applications-and-use-cases-of-behaviorist-ai) | Applications and Use Cases of Behaviorist AI |
+| [7](#stage-7-challenges-and-limitations-of-behaviorist-ai) | Challenges and Limitations of Behaviorist AI |
+
+---
+
+## Material
+
+### Stage 1: Introduction to Behaviorist AI
+
+- Definition
+- Basic Process and Example
+- Chapter Exercise
+
+### Stage 2: Basics of Reinforcement Learning
+
+- Reinforcement Learning (agent, environment, actions, rewards)
+- Model-Based vs Model-Free
+- Chapter Exercise
+
+### Stage 3: Markov Decision Processes (MDPs)
+
+- Markov Decision Process (1): States, Actions, Rewards
+- Markov Decision Process (2): Probabilities, Policy, Value Function
+- Bellman Equation
+- Chapter Exercise
+
+### Stage 4: RL Algorithms and Techniques
+
+- Dynamic Programming (1)
+- Dynamic Programming (2)
+- Value Iteration
+- Policy Iteration
+- Reinforcement Learning Algorithms (overview)
+- Value-Based (Q-Learning)
+- Value-Based (Deep Q-Network, SARSA)
+- Policy-Based (REINFORCE, Policy Gradient)
+- Actor-Critic Algorithms
+- On-Policy and Off-Policy Learning
+- Chapter Exercise
+
+### Stage 5: Behaviorist AI in Robotics and Games
+
+- Behaviorist AI in Robotics (sensing, acting, and learning from feedback)
+- Behaviorist AI in Games (game-playing agents)
+- Chapter Exercise
+
+### Stage 6: Applications and Use Cases of Behaviorist AI
+
+- Applications and Usages of Behaviorist AI
+- Examples of Applications in the Real World
+- Chapter Exercise
+
+### Stage 7: Challenges and Limitations of Behaviorist AI
+
+- Challenges (for example reward design, exploration vs exploitation, data and computing cost)
+- Limitations (for example safety, generalization, explainability)
+- Chapter Exercise
+
+---
+
