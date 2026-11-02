@@ -1,879 +1,543 @@
-# Chapter 1.1: Number Systems and Data
-
-📄 **File:** `1-1-number-systems-and-data.md`
-
-## Chapter Overview
-
-> This chapter introduces what a computer is and how it works, from the basic workflow of input, processing, storage, and output down to the binary data it uses. You'll study the main physical parts of a computer, number systems, and data storage.
-
-## Learning Outcomes
-
-By the end of this chapter, you will be able to:
-
-- Define a computer, identify its core physical components, and explain what each one does.
-- Describe the basic workflow of a computer and distinguish between types of computers.
-- Convert between binary, decimal, and hexadecimal number systems.
-- Explain how numbers, text, images, audio, and video are stored as binary data.
-- Distinguish between primary (RAM) and secondary storage (SSD/HDD).
-
-## Material
-
-| Stage | Topics |
-|---|---|
-| **Stage 1: Computers and Data** | • Definition of a Computer<br>• The Basic Workflow of a Computer (input, processing, storage, output)<br>• Different Types of Computers |
-| **Stage 2: Number Systems** | • Number System Overview<br>• Binary Number System<br>• Decimal to Binary and Binary to Decimal<br>• Hexadecimal to Binary and Binary to Hexadecimal<br>• Hexadecimal to Decimal and Decimal to Hexadecimal |
-| **Stage 3: Data Storage** | • Definition<br>• How Does Data Storage Work<br>• Representing Data in Binary (numbers, text, images, audio, video)<br>• Types of Data Storage (primary and secondary)<br>• Data Storage Devices (HDD, SSD, USB drives) |
-| **Stage 4: Chapter Exercise** | — |
-
----
-
 # Stage 1: Computers and Data
 
-## 1.1 Definition of a Computer
+## Learning Goals
+
+By the end of this stage, you will be able to:
+
+1. Identify the core physical components of a computer and explain their basic functions.
+
+**Topics covered:**
+
+- Definition of a Computer
+- The Basic Workflow of a Computer (input, processing, storage, output)
+- Different Types of Computers
+
+---
+
+# 1.1 Definition of a Computer
+
+## Explanation
+
+A **computer** is an electronic machine that takes in **data**, works on it by following a list of **instructions**, and gives back a result.
+
+Let's define the words we just used:
+
+- **Data**: Raw information a computer can work with, such as numbers, text, pictures, or sound.
+- **Instruction**: A single step that tells the computer what to do (for example, "add these two numbers").
+- **Program**: A complete list of instructions that tells the computer how to finish a task.
+
+Every computer does four basic jobs:
+
+| # | Function | What it means | Example |
+|---|----------|---------------|---------|
+| 1 | **Input** | Receives data from the outside world | Typing on a keyboard, moving a mouse |
+| 2 | **Processing** | Works on the data using the program's instructions | Adding numbers, comparing two values |
+| 3 | **Output** | Sends the finished result back to the user | Showing text on a screen, printing a page |
+| 4 | **Storage** | Saves data so it can be used later | Saving a file to a hard drive |
+
+Computers come in many forms. A **personal computer (PC)** is a computer made for one person to use, like a desktop or laptop. A **smartphone** is a pocket-sized computer that also works as a phone. A **supercomputer** is an extremely powerful computer used for huge tasks such as scientific research.
+
+[insert image about the four basic functions of a computer: input, processing, output, storage]
+
+## Worked Example
+
+**Task:** You use a calculator app on your phone to add 5 + 3.
+
+| Step | What happens | Function |
+|------|--------------|----------|
+| 1 | You tap `5`, `+`, `3` on the touchscreen | Input |
+| 2 | The phone adds the numbers and gets 8 | Processing |
+| 3 | The phone shows `8` on the screen | Output |
+| 4 | The phone keeps the answer in its history list | Storage |
+
+## Activity
+
+You take a photo with your phone and save it to the gallery. Which of the four basic functions is happening in each step?
+
+a. The camera captures the picture.
+b. The phone turns the picture into a file it can handle.
+c. The picture appears on your screen as a preview.
+d. The photo is kept in the gallery.
+
+<details>
+<summary><b>Answer</b></summary>
+
+a. **Input**: the camera gathers data from the outside world.
+b. **Processing**: the phone works on the data.
+c. **Output**: the result is shown to the user.
+d. **Storage**: the data is saved for later use.
+
+</details>
+
+---
+
+## 1.1.1 Turing Model
 
 ### Explanation
 
-A **computer** is an electronic machine that takes in data, works on it by following instructions, saves it, and shows the result.
+In 1936, a mathematician named **Alan Turing** proposed the idea of a machine that could do *any* calculation, as long as it was given the right instructions. This idea is called the **Turing Machine**.
 
-Two words appear here that we need to define right away:
+A **Turing Machine** is an imaginary (hypothetical) device with three parts:
 
-- **Data** is raw facts with no meaning on their own, such as the numbers `25`, `3`, and `90`.
-- **Information** is data that has been organized so it makes sense, such as "Your test score is 90 out of 100."
+- A very long **tape** (it never ends) where symbols are written and read.
+- A **head** that reads and writes symbols on the tape.
+- A set of **rules** that tell the head what to do next, based on the symbol it sees.
 
-A computer is made of two parts:
+[insert image about a Turing Machine with its tape and head]
 
-- **Hardware** is the physical parts you can touch (screen, keyboard, chips).
-- **Software** is the set of instructions (programs) that tells the hardware what to do.
+From this idea comes the **Turing model**, which describes a computer as a **programmable data processor**. *Programmable* means you can change what the computer does by changing its program. The computer is treated like a **black box**: a device where you only see what goes in and what comes out, not what happens inside.
 
-#### Core physical components (hardware)
+[insert image about a black box diagram: Input data -> Computer -> Output data]
 
-| Component | What it is | What it does |
-|---|---|---|
-| **CPU** (Central Processing Unit) | A small chip often called the "brain" of the computer | Follows instructions and does calculations |
-| **RAM** (Random Access Memory) | Fast, temporary memory | Holds the data and programs the computer is using right now |
-| **Storage** (SSD or HDD) | Permanent memory | Keeps files saved, even when the computer is off |
-| **Motherboard** | The main circuit board | Connects all the parts so they can talk to each other |
-| **Input devices** | Devices that send data *into* the computer (keyboard, mouse, microphone) | Let the user give commands and data |
-| **Output devices** | Devices that show results *from* the computer (screen, speaker, printer) | Let the user see or hear the results |
-| **Power supply** | A unit that converts wall electricity into the power the parts need | Keeps the computer running |
+In this model, the output depends on **two things**: the **input data** and the **program**. Changing either one can change the result. But running the *same program* with the *same input* always gives the *same output*.
 
-[insert image about the inside of a desktop computer with the CPU, RAM, storage, motherboard, and power supply labeled]
+> **Note:** This model is a little too broad. Even a simple calculator fits this description, but we don't usually call a calculator a full computer.
+
+Turing's work also showed that any problem that *can* be solved by following steps can be solved by a computer, as long as it has the correct program.
 
 ### Worked Example
 
-**Question:** You type a letter in a word processor and press the print button. Which hardware part does each job?
+The input data is always `3, 12, 8, 22`. Watch how the output changes when only the program changes.
 
-| Job | Hardware part |
-|---|---|
-| Pressing the keys | Keyboard (input device) |
-| Holding the letter while you are still typing | RAM |
-| Working out which character each key press means | CPU |
-| Showing the letter on the screen | Monitor (output device) |
-| Saving the letter so it is still there tomorrow | Storage (SSD or HDD) |
-| Producing the paper copy | Printer (output device) |
+| Program | Input data | Output data |
+|---------|------------|-------------|
+| Sort (put in order, smallest first) | 3, 12, 8, 22 | 3, 8, 12, 22 |
+| Add (find the total) | 3, 12, 8, 22 | 45 |
+| Find smallest | 3, 12, 8, 22 | 3 |
+
+[insert image about one computer running three different programs (Sort, Add, Find smallest) on the same input]
 
 ### Activity
 
-Match each part to its job:
+Your input data is `5, 2, 9`. What is the output for each program?
 
-1. CPU
-2. RAM
-3. SSD
-4. Microphone
-5. Speaker
-6. Motherboard
-
-- **A.** Plays sound out loud
-- **B.** Connects all the parts together
-- **C.** Follows instructions and does calculations
-- **D.** Holds data being used right now (temporary)
-- **E.** Sends sound into the computer
-- **F.** Keeps files saved permanently
-
-### Answer
+a. Sort
+b. Add
+c. Find smallest
 
 <details>
-<summary>Click to show the answer</summary>
+<summary><b>Answer</b></summary>
 
-1 → C, 2 → D, 3 → F, 4 → E, 5 → A, 6 → B
+a. **Sort** gives `2, 5, 9`
+b. **Add** gives `16` (5 + 2 + 9)
+c. **Find smallest** gives `2`
+
+The input stayed the same, but the program changed the output.
 
 </details>
 
 ---
 
-## 1.2 The Basic Workflow of a Computer
+## 1.1.2 von Neumann Model
 
 ### Explanation
 
-Every computer, from a calculator to a gaming PC, follows the same four steps. This is called the **workflow** (the order in which a job is done).
+Around 1944–1945, a mathematician named **John von Neumann** added a new idea to Turing's work. He pointed out that **programs and data are both just information**, so a computer can keep *both* in its **memory**.
 
-1. **Input:** Data goes into the computer (typing, clicking, taking a photo).
-2. **Processing:** The CPU works on the data by following instructions.
-3. **Storage:** The data and results are saved, either for a short time (RAM) or for a long time (SSD/HDD).
-4. **Output:** The results are shown to the user (screen, sound, printout).
+**Memory** is the part of the computer that holds programs and data while the computer is working. Before this idea, early computers had to be rewired by hand every time they needed to do a new job. With the von Neumann model, switching tasks is as easy as loading a different program.
 
-```
-Input  →  Processing  →  Output
-              ↕
-           Storage
-```
+The **von Neumann model** splits a computer into four parts, called **subsystems**:
 
-[insert image about the input, processing, storage, and output workflow of a computer]
+| Subsystem | What it does |
+|-----------|--------------|
+| **Memory** | Stores both programs and data |
+| **Arithmetic Logic Unit (ALU)** | Does the math (like adding) and the logic (like comparing two numbers) |
+| **Control Unit** | Manages and directs all the other parts, like a traffic controller |
+| **Input/Output** | Moves data between the computer and the outside world |
+
+The control unit repeats a simple cycle: it **fetches** (gets) an instruction from memory, then **executes** (carries out) it, then moves on to the next one. This keeps programs running in an orderly and predictable way.
+
+[insert image about the von Neumann model showing Memory, ALU, Control Unit, and Input/Output]
 
 ### Worked Example
 
-**Question:** Place each step of "using a calculator app" into the workflow.
+**Task:** Add two numbers, 4 and 6.
 
-| Step | Workflow stage |
-|---|---|
-| You tap `7`, `+`, `5` | Input |
-| The CPU adds 7 and 5 | Processing |
-| The number `12` is held in memory for a moment | Storage |
-| `12` appears on the screen | Output |
+| Step | Subsystem | What it does |
+|------|-----------|--------------|
+| 1 | Input/Output | Receives the numbers 4 and 6 from the keyboard |
+| 2 | Memory | Stores 4 and 6, along with the "add" instruction |
+| 3 | Control Unit | Fetches the "add" instruction from memory |
+| 4 | ALU | Calculates 4 + 6 = 10 |
+| 5 | Input/Output | Sends 10 to the screen |
 
 ### Activity
 
-A student plays a game using a game controller. Name one example of each stage:
+Match each job to the correct subsystem: **Memory**, **ALU**, **Control Unit**, or **Input/Output**.
 
-1. Input
-2. Processing
-3. Storage
-4. Output
-
-### Answer
+a. Checking whether 15 is bigger than 12
+b. Holding a program while it runs
+c. Showing a result on the monitor
+d. Deciding which instruction runs next
 
 <details>
-<summary>Click to show the answer</summary>
+<summary><b>Answer</b></summary>
 
-Your answers may be a little different, but good examples are:
-
-1. **Input:** Pressing a button on the controller.
-2. **Processing:** The CPU works out that the character should jump.
-3. **Storage:** The game saves your level to the SSD.
-4. **Output:** The character jumps on the screen and a sound plays through the speaker.
+a. **ALU** (comparing is a logic operation)
+b. **Memory**
+c. **Input/Output**
+d. **Control Unit**
 
 </details>
 
 ---
 
-## 1.3 Different Types of Computers
+## 1.1.3 Computer Components
 
 ### Explanation
 
-Computers come in many sizes. The right type depends on the job.
+A computer is made of three main components:
 
-| Type | What it is | Typical use |
-|---|---|---|
-| **Supercomputer** | The fastest and largest computers, made of thousands of CPUs working together | Weather forecasting, scientific research |
-| **Mainframe** | A very large, reliable computer that many people use at once | Banks, airlines |
-| **Server** | A computer that shares its data or services with other computers over a network | Websites, email, online games |
-| **Personal computer (PC)** | A computer made for one person. A *desktop* stays on a desk; a *laptop* is portable | Homework, work, gaming |
-| **Smartphone and tablet** | Small touchscreen computers you can carry | Calls, messages, apps |
-| **Embedded computer** | A tiny computer built inside another device | Washing machines, cars, smart watches |
+- **Hardware**: The physical parts of the computer that you can touch.
+- **Software**: The programs and instructions stored in the computer's memory.
+- **Data**: Information the computer can read, change, or store.
 
-[insert image about different types of computers, from a supercomputer to an embedded chip]
+**Hardware** includes memory, the ALU, and the input/output parts. **Input** means the data or commands the computer receives from users or devices. **Output** means the result the computer gives back (such as a display or a printout). Together, they let the user and the computer communicate.
+
+[insert image about input example (keyboard to computer) and output example (computer to printer)]
+
+Computers store and process data in **binary**, a number system that uses only two digits: `0` and `1`. Numbers, text, pictures, and sound must all be converted into binary before a computer can work with them. **Software** is what lets the hardware and the data work together, because it tells the hardware how to handle the data.
+
+Software has four key parts:
+
+1. **Stored programs**: Modern computers keep both programs and data in memory. Early computers needed to be set up by hand for each task.
+
+   [insert image about memory split into a Program section and a Data section]
+
+2. **Sequence of instructions**: A program is a series of instructions that work on data. The same instructions can be reused and rearranged to build different programs.
+
+   [insert image about a four-step instruction list: input first number, input second number, add and store, output result]
+
+3. **Algorithms**: An **algorithm** is a step-by-step set of rules for solving a problem. Programmers plan an algorithm *before* they write a program.
+
+   [insert image about an algorithm flowchart: Input -> Set of rules -> Output]
+
+4. **Languages**: Early computers only understood **machine language**, which is written entirely in binary. Later, **symbolic languages** were created, which use letters and symbols so people can write programs more easily. One early standard is **ASCII** (explained in section 1.2.2).
 
 ### Worked Example
 
-**Question:** Which type of computer is best for a bank that must handle millions of customer transactions every day and almost never go down?
+**Task:** Describe the sequence of instructions for adding two numbers.
 
-**Solution:** A **mainframe**. It is built to serve many users at once and to be very reliable. A laptop is too small for the job, and a supercomputer is built for heavy calculations, not for handling many users.
+1. Input the first number into memory.
+2. Input the second number into memory.
+3. Add the two numbers and store the result in memory.
+4. Output the result.
+
+These steps are also a small **algorithm**: a clear, step-by-step way to solve the problem of adding two numbers.
 
 ### Activity
 
-Choose the best computer type for each situation:
-
-1. A computer that stores a website so people around the world can open it.
-2. The tiny computer inside a microwave oven.
-3. A computer used to predict hurricanes by doing billions of calculations.
-4. A computer a student carries to class to take notes.
-
-### Answer
+Write a short algorithm (3 to 5 steps) for finding the **average** of two numbers. (The average is the total of the numbers divided by how many numbers there are.)
 
 <details>
-<summary>Click to show the answer</summary>
+<summary><b>Answer</b></summary>
 
-1. Server
-2. Embedded computer
-3. Supercomputer
-4. Laptop (personal computer)
+One possible answer:
+
+1. Input the first number into memory.
+2. Input the second number into memory.
+3. Add the two numbers together.
+4. Divide the total by 2 and store the result in memory.
+5. Output the result.
+
+Any answer with clear, ordered steps that gives the right result is correct.
 
 </details>
 
 ---
 
-# Stage 2: Number Systems
+# 1.2 The Basic Workflow of a Computer
 
-## 2.1 Number System Overview
+A **workflow** is the path that data follows from start to finish. In a computer, data moves through four stages:
+
+**Input → Processing → Storage → Output**
+
+[insert image about the computer workflow: input, processing, storage, output]
+
+---
+
+## 1.2.1 Input
 
 ### Explanation
 
-A **number system** is a way of writing numbers using a fixed set of symbols. Computers can only work with numbers, so number systems are the base of everything a computer does.
+For a computer to produce any **output**, it first has to receive **input** to work on. An **input system** has four elements:
 
-Every number system has a **base**. The base is how many different digits the system uses.
+1. **Input interface**: The part that collects data from outside and delivers it to the computer. It includes:
+   - **Human Interface Devices (HID)**: Devices people use to talk to the computer, such as keyboards, mice, and touchscreens.
+   - **Input/Output ports**: Physical connection points, such as USB ports, audio jacks, and HDMI ports, where devices plug in.
+2. **Input controllers**: Small circuits that receive signals from input devices, prepare the data, and pass it to the **central processing unit (CPU)**. (The CPU is the "brain" of the computer. More on it in 1.2.2.)
 
-| Number system | Base | Digits used | Where it is used |
-|---|---|---|---|
-| **Binary** | 2 | 0, 1 | Inside the computer, for all data and calculations |
-| **Decimal** | 10 | 0 – 9 | Everyday life; numbers people type in and read |
-| **Hexadecimal** (hex) | 16 | 0 – 9 and A – F | A short way to write long binary numbers (for example, colors and memory addresses) |
+   [insert image about an input/output controller device]
 
-In hexadecimal, the letters stand for numbers: **A = 10, B = 11, C = 12, D = 13, E = 14, F = 15**.
+3. **Input devices**: Tools that users interact with to give data to the computer. Each one handles a specific kind of data:
 
-A small note: there is also an **octal** system (base 8, digits 0 – 7), but we will focus on binary, decimal, and hexadecimal in this chapter.
+   | Device | What it does |
+   |--------|--------------|
+   | **Keyboard** | Captures typed text |
+   | **Mouse** | Detects movements and clicks and turns them into cursor movement |
+   | **Touchscreen** | Combines input and output by detecting touches right on the display |
+   | **Scanner** | Turns paper documents into digital data |
+   | **Microphone** | Captures sound |
 
-To show which system a number is written in, we write the base as a small number after it. For example, `(9)₁₀` means "9 in decimal" and `(1001)₂` means "1001 in binary".
+4. **Input data**: The actual information being sent in. It can be:
+   - **Text** (from a keyboard)
+   - **Audio** (from a microphone)
+   - **Images or video** (from a camera)
+   - **Sensor signals** (such as temperature, light, or motion readings from a **sensor**, a device that measures something in the real world)
 
-[insert image about the binary, decimal, and hexadecimal number systems side by side]
+   Input data can also include commands, raw numbers, or touch gestures. The type and quality of the input data affect how the computer handles it.
 
 ### Worked Example
 
-**Question:** What do the digits `1010` mean in each system?
+**Task:** You press the letter `A` on a keyboard.
 
-- In **decimal**, `1010` is "one thousand and ten."
-- In **binary**, `1010` is only 1s and 0s, so it could be binary. (We will learn in 2.3 that it equals 10 in decimal.)
-- In **hexadecimal**, `1010` is also valid, since hex uses 0 – 9 too.
-
-This is why we write the base after the number. Without it, `1010` could mean three different values.
+| Step | Element | What happens |
+|------|---------|--------------|
+| 1 | Input device | The keyboard detects the key press |
+| 2 | Input controller | The signal is prepared and passed along |
+| 3 | Input interface | The USB port carries the signal to the computer |
+| 4 | Input data | The computer receives the data "A" |
 
 ### Activity
 
-For each number, say which systems it could belong to (binary, decimal, hexadecimal):
+For each situation, name the input device and the type of input data.
 
-1. `1101`
-2. `275`
-3. `3F`
-4. `FF9`
-
-### Answer
+a. You speak into a headset during a video call.
+b. You photograph a page of your notes with a phone camera.
+c. A chip in a smart home reads the room temperature.
 
 <details>
-<summary>Click to show the answer</summary>
+<summary><b>Answer</b></summary>
 
-1. `1101`: binary, decimal, or hexadecimal (it only uses 0 and 1).
-2. `275`: decimal or hexadecimal (it uses digits above 1, so it cannot be binary).
-3. `3F`: hexadecimal only (the letter F is not used in binary or decimal).
-4. `FF9`: hexadecimal only.
+a. Input device: **microphone**. Input data: **audio**.
+b. Input device: **camera**. Input data: **images**.
+c. Input device: **sensor**. Input data: **sensor signals** (temperature).
 
 </details>
 
 ---
 
-## 2.2 Binary Number System
+## 1.2.2 Data Processing
 
 ### Explanation
 
-The **binary number system** uses only two digits, **0** and **1**. Each binary digit is called a **bit** (short for "binary digit"). A group of **8 bits** is called a **byte**.
+**Processing** means working on the input data by following the program's instructions. The **central processing unit (CPU)** does most of this work. Once the input interface delivers the data, the CPU:
 
-Computers use binary because their parts only have two states: **off (0)** and **on (1)**, like a light switch.
+- **Analyzes** the data and converts it into a form the computer can use.
+- **Executes** (carries out) the needed operations. For example, if you press a key, the CPU recognizes it, converts it to binary, and triggers the matching action, like showing a letter on the screen.
+- **Communicates** with memory, storage, and output devices to finish bigger tasks.
 
-To read a binary number, we need two ideas:
+A computer is **programmable**, which means it can run different sets of instructions. This is what makes it useful for so many different jobs.
 
-- **Digit value:** the digit itself. In binary, this is only 0 or 1.
-- **Place value:** how much a position is worth. In binary, place values are powers of 2, starting from the right.
+**Data representation**
 
-| Place | 2⁷ | 2⁶ | 2⁵ | 2⁴ | 2³ | 2² | 2¹ | 2⁰ |
-|---|---|---|---|---|---|---|---|---|
-| **Place value** | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+Computers store data using the **binary system**. A **bit** (short for *binary digit*) is a single `0` or `1`. You can think of a bit like a light bulb: it is either **off (0)** or **on (1)**. In logic, `1` can also mean **True** and `0` can mean **False**.
 
-(A **power of 2** means 2 multiplied by itself. For example, 2³ = 2 × 2 × 2 = 8.)
+[insert image about a light bulb off (0) and a light bulb on (1)]
 
-[insert image about binary digit value and place value, showing the 8-bit place value chart]
+One bit is too small to hold anything useful, so computers **string many bits together** into a line of 1s and 0s.
+
+**ASCII**
+
+To turn text into binary, computers use a code. **ASCII** (American Standard Code for Information Interchange) is a **character encoding** scheme, which means a system that gives every letter, digit, and symbol its own number. ASCII uses **7 bits** for each character, which gives 128 different combinations (from `0000000` to `1111111`, or 0 to 127 in decimal). Thanks to ASCII, the CPU can turn binary into text that people can read.
+
+| Character | ASCII code | Binary code |
+|-----------|-----------|-------------|
+| null character | 0 | 0000000 |
+| a | 97 | 1100001 |
+| b | 98 | 1100010 |
+| c | 99 | 1100011 |
+| A | 65 | 1000001 |
+| B | 66 | 1000010 |
+| C | 67 | 1000011 |
+| % | 37 | 0100101 |
+| + | 43 | 0101011 |
+| 0 | 48 | 0110000 |
+| 1 | 49 | 0110001 |
+| Delete | 127 | 1111111 |
 
 ### Worked Example
 
-**Question:** What is the decimal value of `00001001`?
+**Task:** How does the computer store the word `Cab`?
 
-**Step 1:** Write the bits above the place values.
+Look up each letter in the ASCII table:
 
-| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
-|---|---|---|---|---|---|---|---|
-| 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1 |
+| Letter | ASCII code | Binary code |
+|--------|-----------|-------------|
+| C | 67 | 1000011 |
+| a | 97 | 1100001 |
+| b | 98 | 1100010 |
 
-**Step 2:** Multiply each digit by its place value and add.
-
-(0×128) + (0×64) + (0×32) + (0×16) + (1×8) + (0×4) + (0×2) + (1×1) = 8 + 1 = **9**
-
-So `(00001001)₂ = (9)₁₀`.
+So `Cab` is stored as: `1000011 1100001 1100010`
 
 ### Activity
 
-1. Write the place values for an 8-bit number from left to right.
-2. How many bits are in one byte?
-3. Why do computers use binary?
+Use the ASCII table above to answer:
 
-### Answer
+a. What is the binary code for `B`?
+b. What is the binary code for `+`?
+c. Which character does `0110001` stand for?
+d. How many different characters can 7-bit ASCII represent?
 
 <details>
-<summary>Click to show the answer</summary>
+<summary><b>Answer</b></summary>
 
-1. 128, 64, 32, 16, 8, 4, 2, 1
-2. 8 bits
-3. Computer parts only have two states, off (0) and on (1), so binary is the easiest and most reliable way to store and process data.
+a. `1000010`
+b. `0101011`
+c. `1` (the digit one, ASCII 49)
+d. **128** characters (2 to the power of 7)
 
 </details>
 
 ---
 
-## 2.3 Decimal to Binary and Binary to Decimal
+## 1.2.3 Storage
 
 ### Explanation
 
-#### Binary to decimal
+After data is processed, the computer often needs to **keep** it. **Storage** is the part of the computer that saves data so it can be used later. There are two main kinds:
 
-Multiply each bit by its place value, then add the results. Bits that are 0 add nothing, so you can just add the place values where there is a 1.
+- **Memory (main memory)**: Fast, temporary space the computer uses while it is working. It is usually **volatile**, which means its contents are lost when the power is turned off. The most common type is **RAM** (Random Access Memory).
+- **Secondary storage**: Slower but permanent space that keeps data even when the power is off (this is called **non-volatile**). Examples include a **hard disk drive (HDD)**, which stores data on spinning magnetic disks, and a **solid-state drive (SSD)**, which stores data on fast electronic chips with no moving parts.
 
-#### Decimal to binary
+| Feature | Memory (RAM) | Secondary storage (HDD / SSD) |
+|---------|--------------|-------------------------------|
+| Speed | Very fast | Slower |
+| Keeps data when powered off? | No | Yes |
+| Typical size | Smaller | Larger |
+| Used for | Programs and data currently in use | Files you want to keep |
 
-There are two methods. Both give the same answer.
-
-**Method 1: Subtract place values**
-
-1. Write the place values (128, 64, 32, 16, 8, 4, 2, 1).
-2. Find the largest place value that fits into your number. Put a **1** there and subtract it.
-3. Repeat with what is left. Put a **0** in every place value you skip.
-4. Stop when the remainder is 0.
-
-**Method 2: Divide by 2**
-
-1. Divide the number by 2. Write down the **remainder** (what is left over, either 0 or 1).
-2. Divide the answer (the **quotient**) by 2 again. Write down the remainder.
-3. Keep going until the quotient is 0.
-4. Read the remainders from **bottom to top**.
-
-Two more terms to know:
-
-- **LSB (Least Significant Bit):** the bit on the far right. It is worth the least (1).
-- **MSB (Most Significant Bit):** the bit on the far left. It is worth the most.
-
-In Method 2, the first remainder you get is the LSB and the last remainder is the MSB.
-
-[insert image about the place value table used for decimal to binary conversion]
+[insert image about the difference between RAM and a hard drive / SSD]
 
 ### Worked Example
 
-**Part A: Binary to decimal.** Convert `1101` to decimal.
+**Task:** You write an essay in a word processor.
 
-| 8 | 4 | 2 | 1 |
-|---|---|---|---|
-| 1 | 1 | 0 | 1 |
-
-(1×8) + (1×4) + (0×2) + (1×1) = 8 + 4 + 0 + 1 = **13**
-
-**Part B: Decimal to binary.** Convert 9 to binary.
-
-*Method 1 (subtract):*
-
-- The biggest place value that fits into 9 is **8**. Put a 1 under 8. 9 − 8 = 1.
-- The biggest place value that fits into 1 is **1**. Put a 1 under 1. 1 − 1 = 0.
-- All other places get 0.
-
-| 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
-|---|---|---|---|---|---|---|---|
-| 0 | 0 | 0 | 0 | 1 | 0 | 0 | 1 |
-
-Answer: **00001001**
-
-*Method 2 (divide by 2):*
-
-| Division | Quotient | Remainder |
-|---|---|---|
-| 9 ÷ 2 | 4 | **1** ← LSB |
-| 4 ÷ 2 | 2 | **0** |
-| 2 ÷ 2 | 1 | **0** |
-| 1 ÷ 2 | 0 | **1** ← MSB |
-
-Read the remainders from bottom to top: **1001** (which is 00001001 with leading zeros removed).
+1. While you type, the essay is held in **RAM** so the computer can change it quickly.
+2. When you click **Save**, the essay is copied to the **SSD**.
+3. When you shut down the computer, RAM is cleared, but the saved essay stays safe on the SSD.
 
 ### Activity
 
-1. Convert `10110` (binary) to decimal.
-2. Convert `11111111` (binary) to decimal.
-3. Convert 13 (decimal) to binary using the divide-by-2 method.
-4. Convert 20 (decimal) to binary using the subtract method.
+Decide whether each item is memory (RAM) or secondary storage:
 
-### Answer
+a. Holds a game while you are playing it
+b. Keeps your photos after you turn off the computer
+c. Loses its contents when the power is off
 
 <details>
-<summary>Click to show the answer</summary>
+<summary><b>Answer</b></summary>
 
-1. `10110` = 16 + 4 + 2 = **22**
-2. `11111111` = 128 + 64 + 32 + 16 + 8 + 4 + 2 + 1 = **255**
-3. 13 ÷ 2 = 6 r **1**; 6 ÷ 2 = 3 r **0**; 3 ÷ 2 = 1 r **1**; 1 ÷ 2 = 0 r **1**. Read from bottom to top: **1101**
-4. The biggest place value that fits into 20 is 16 (20 − 16 = 4). Then 4 fits (4 − 4 = 0). So the 16 and 4 places get a 1: **10100**
+a. **Memory (RAM)**
+b. **Secondary storage**
+c. **Memory (RAM)**
 
 </details>
 
 ---
 
-## 2.4 Hexadecimal to Binary and Binary to Hexadecimal
+## 1.2.4 Output
 
 ### Explanation
 
-**Hexadecimal** is useful because it is a short way to write long binary numbers. The key fact is:
+**Output** is the result the computer sends back to the user after processing. **Output devices** are the hardware that presents this result:
 
-> **One hex digit = exactly four bits.**
+| Device | What it does |
+|--------|--------------|
+| **Monitor** | Displays text, images, and video on a screen |
+| **Printer** | Puts text or images on paper |
+| **Speakers** | Play sound |
+| **Touchscreen** | Shows output and also accepts input |
 
-Four bits are sometimes called a **nibble** (half a byte). Use this table to convert quickly:
+Output devices connect to the computer through ports, in the same way input devices do. Some devices, like a touchscreen, work as both input *and* output.
 
-| Hex | Binary | Decimal | | Hex | Binary | Decimal |
-|---|---|---|---|---|---|---|
-| 0 | 0000 | 0 | | 8 | 1000 | 8 |
-| 1 | 0001 | 1 | | 9 | 1001 | 9 |
-| 2 | 0010 | 2 | | A | 1010 | 10 |
-| 3 | 0011 | 3 | | B | 1011 | 11 |
-| 4 | 0100 | 4 | | C | 1100 | 12 |
-| 5 | 0101 | 5 | | D | 1101 | 13 |
-| 6 | 0110 | 6 | | E | 1110 | 14 |
-| 7 | 0111 | 7 | | F | 1111 | 15 |
-
-**Hex to binary:** Replace each hex digit with its 4-bit group.
-
-**Binary to hex:**
-
-1. Split the binary number into groups of 4, starting from the **right**.
-2. If the leftmost group has fewer than 4 bits, add **0s on the left** to fill it.
-3. Replace each group with its hex digit.
-
-[insert image about the hexadecimal to binary conversion table]
+[insert image about common output devices: monitor, printer, and speakers]
 
 ### Worked Example
 
-**Part A: Hex to binary.** Convert `(FC)₁₆` to binary.
+**Task:** You press **Print** on a finished report.
 
-- F = 15 = `1111`
-- C = 12 = `1100`
-
-So `(FC)₁₆ = (11111100)₂`.
-
-**Part B: Binary to hex.** Convert `(110011)₂` to hex.
-
-**Step 1:** Split into groups of 4 from the right: `11` and `0011`.
-
-**Step 2:** The left group has only 2 bits, so add 0s on the left: `0011` and `0011`.
-
-**Step 3:** Convert each group: `0011` = 3 and `0011` = 3.
-
-So `(110011)₂ = (33)₁₆`.
+| Step | What happens |
+|------|--------------|
+| 1 | The CPU sends the report data toward the printer |
+| 2 | The data travels through a port (for example, USB) to the printer |
+| 3 | The printer turns the data into a page of paper |
 
 ### Activity
 
-1. Convert `(2A)₁₆` to binary.
-2. Convert `(B7)₁₆` to binary.
-3. Convert `(10111101)₂` to hex.
-4. Convert `(1111010)₂` to hex.
+Name the best output device for each result:
 
-### Answer
+a. You want to hear a song.
+b. You want a paper copy of a form.
+c. You want to watch a video.
 
 <details>
-<summary>Click to show the answer</summary>
+<summary><b>Answer</b></summary>
 
-1. 2 = `0010`, A = `1010`, so `(2A)₁₆ = (00101010)₂`
-2. B = `1011`, 7 = `0111`, so `(B7)₁₆ = (10110111)₂`
-3. `1011` = B and `1101` = D, so `(10111101)₂ = (BD)₁₆`
-4. Split from the right: `111` and `1010`. Add a 0 on the left of the first group: `0111` = 7, `1010` = A. So `(1111010)₂ = (7A)₁₆`
+a. **Speakers**
+b. **Printer**
+c. **Monitor**
 
 </details>
 
 ---
 
-## 2.5 Hexadecimal to Decimal and Decimal to Hexadecimal
+# 1.3 Different Types of Computers
 
-### Explanation
+## Explanation
 
-#### Hex to decimal
+Computers come in many sizes. They all follow the same basic workflow (input, processing, storage, output), but they are built for different jobs.
 
-In hex, the place values are **powers of 16** instead of powers of 2:
+| Type | What it is | Examples |
+|------|------------|----------|
+| **Personal computer (PC)** | A computer made for one person at a time | Desktop, laptop |
+| **Smartphone / tablet** | A small, portable computer you control by touch | Phone, tablet |
+| **Server** | A computer that shares data or services with many other computers over a network | Website server, file server |
+| **Supercomputer** | An extremely powerful computer for very large calculations | Weather forecasting, scientific research |
+| **Embedded computer** | A tiny computer built inside another device to control it | Washing machine, car, smart TV |
 
-| Place | 16² | 16¹ | 16⁰ |
-|---|---|---|---|
-| **Place value** | 256 | 16 | 1 |
+A **network** is a group of computers that are connected so they can share data.
 
-Change any letters into numbers (A = 10 … F = 15), multiply each digit by its place value, then add.
+[insert image about different types of computers: desktop, laptop, smartphone, server, supercomputer, embedded device]
 
-#### Decimal to hex
+## Worked Example
 
-1. Divide the number by 16. Write down the remainder.
-2. Divide the quotient by 16 again. Write down the remainder.
-3. Repeat until the quotient is 0.
-4. Read the remainders from **bottom to top**. Change any remainders from 10 – 15 into the letters A – F.
+**Task:** Which type of computer fits each situation?
 
-[insert image about the powers of 16 place value chart]
+| Situation | Type of computer | Why |
+|-----------|------------------|-----|
+| A student writes a report at home | Personal computer | Made for one person's everyday use |
+| A video site sends movies to millions of viewers | Server | Shares data with many users over a network |
+| Scientists simulate a storm that may hit next week | Supercomputer | Needs huge calculating power |
+| A microwave controls its heating time | Embedded computer | A tiny computer built inside the appliance |
 
-### Worked Example
+## Activity
 
-**Part A: Hex to decimal.** Convert `(12)₁₆` to decimal.
+Name the type of computer in each situation:
 
-(1 × 16¹) + (2 × 16⁰) = 16 + 2 = **18**
-
-**Part B: Decimal to hex.** Convert 127 to hex.
-
-| Division | Quotient | Remainder |
-|---|---|---|
-| 127 ÷ 16 | 7 | **15** (= F) |
-| 7 ÷ 16 | 0 | **7** |
-
-Read from bottom to top: 7, then F. So `127₁₀ = (7F)₁₆`.
-
-### Activity
-
-1. Convert `(1A)₁₆` to decimal.
-2. Convert `(2F)₁₆` to decimal.
-3. Convert 45 (decimal) to hex.
-4. Convert 200 (decimal) to hex.
-
-### Answer
+a. A phone used to check the weather.
+b. The small computer inside a car that controls the engine.
+c. A powerful machine used to model how a new medicine works.
+d. A computer that stores and shares your school's files with all students.
 
 <details>
-<summary>Click to show the answer</summary>
+<summary><b>Answer</b></summary>
 
-1. (1 × 16) + (10 × 1) = 16 + 10 = **26**
-2. (2 × 16) + (15 × 1) = 32 + 15 = **47**
-3. 45 ÷ 16 = 2 r **13** (D); 2 ÷ 16 = 0 r **2**. Read from bottom to top: **2D**
-4. 200 ÷ 16 = 12 r **8**; 12 ÷ 16 = 0 r **12** (C). Read from bottom to top: **C8**
+a. **Smartphone**
+b. **Embedded computer**
+c. **Supercomputer**
+d. **Server**
 
 </details>
 
 ---
 
-# Stage 3: Data Storage
-
-## 3.1 Definition
-
-### Explanation
-
-**Data storage** means keeping data in a computer so that it can be used later.
-
-Think of a big notebook where you write down your favorite games, pictures, and homework. Data storage is like that notebook, but for computers. Instead of paper, computers use special devices, like hard drives or USB sticks, to save the information they need. Just like your notebook keeps your drawings safe, data storage keeps the computer's files, pictures, and games safe so you can look at them again later.
-
-[insert image about a notebook compared to a computer storage device]
-
-### Worked Example
-
-**Question:** You finish your homework on a laptop, shut it down, and open it again tomorrow. Why is the homework still there?
-
-**Solution:** When you pressed "Save," the file was written to the computer's **storage** (an SSD or HDD). Storage keeps data even when the power is off, so the file is still there tomorrow.
-
-### Activity
-
-Which of these is an example of data storage? Explain why.
-
-- **A.** A USB stick holding your photos
-- **B.** The screen showing a video
-- **C.** A keyboard
-
-### Answer
-
-<details>
-<summary>Click to show the answer</summary>
-
-**A.** A USB stick keeps your photos saved. The screen (B) is an output device and the keyboard (C) is an input device, so neither one stores data.
-
-</details>
-
----
-
-## 3.2 How Does Data Storage Work
-
-### Explanation
-
-A computer does not keep all its data in one place. It uses different kinds of storage that trade off **speed** and **permanence** (how long the data stays).
-
-- Some storage is very fast, but it forgets everything when the power is turned off. This is called **volatile** memory. RAM is volatile.
-- Other storage is a bit slower, but it keeps data for a long time, even when the computer is off. This is called **non-volatile** memory. Hard drives, SSDs, and USB drives are non-volatile.
-
-The closer the storage is to the CPU, the faster it is, but the smaller and more temporary it is.
-
-| Level | Example | Speed | Permanent? |
-|---|---|---|---|
-| 1 (closest to the CPU) | **Cache** (a tiny, very fast memory inside or next to the CPU) | Fastest | No |
-| 2 | **RAM** | Very fast | No |
-| 3 | **Storage devices** (SSD, HDD, USB drive) | Slower | Yes |
-
-**Cloud storage** works like a magical notebook kept on the internet. You can open your files from any computer or phone as long as you are connected to the internet, and your files stay safe even if you don't have your own computer with you.
-
-[insert image about the memory hierarchy, showing the CPU, cache, RAM, and permanent storage]
-
-### Worked Example
-
-**Question:** You are writing an essay and the power suddenly goes out. You did not press save. What happens to the essay?
-
-**Solution:** The essay was only in **RAM**, which is volatile. When the power went off, RAM was cleared and the essay was lost. If you had pressed "Save," a copy would have been written to the SSD or HDD, which is non-volatile, and it would have survived.
-
-### Activity
-
-1. Is RAM volatile or non-volatile?
-2. Put these in order from fastest to slowest: SSD, Cache, RAM.
-3. Name one benefit of cloud storage.
-
-### Answer
-
-<details>
-<summary>Click to show the answer</summary>
-
-1. Volatile. It loses its data when the power is off.
-2. Cache → RAM → SSD
-3. You can reach your files from any device with an internet connection. (Another correct answer: your files are not tied to just one device.)
-
-</details>
-
----
-
-## 3.3 Representing Data in Binary
-
-### Explanation
-
-Computers only understand 0s and 1s, so every type of data must be turned into binary first. This is called **encoding**.
-
-#### Storage units
-
-We need names for how much data we have:
-
-| Unit | Size |
-|---|---|
-| **Bit** | A single 0 or 1 |
-| **Byte** | 8 bits |
-| **Kilobyte (KB)** | about 1,000 bytes |
-| **Megabyte (MB)** | about 1,000 KB |
-| **Gigabyte (GB)** | about 1,000 MB |
-| **Terabyte (TB)** | about 1,000 GB |
-
-(Some systems use 1,024 instead of 1,000. We will use 1,000 to keep the math simple.)
-
-#### How each type of data is stored
-
-| Data type | How it is stored in binary |
-|---|---|
-| **Numbers** | Converted straight to binary (as in Stage 2). |
-| **Text** | Each character gets a number from a code table. A common table is **ASCII**. For example, `A` = 65, which is `01000001` in binary. |
-| **Images** | A picture is a grid of tiny dots called **pixels**. Each pixel's color is stored as a number. In many systems, a color is made from three numbers (red, green, blue). Hex is often used to write them, such as `#FF0000` for pure red. |
-| **Audio** | Sound is a smooth wave. The computer measures the height of the wave many times per second (this is called **sampling**) and stores each measurement as a binary number. |
-| **Video** | A video is a fast series of still images (called **frames**) plus an audio track. Each frame is stored like an image. |
-
-[insert image about how text, images, audio, and video are converted into binary]
-
-### Worked Example
-
-**Question:** How is the word `Hi` stored in ASCII?
-
-**Step 1:** Look up each letter's ASCII number. `H` = 72 and `i` = 105.
-
-**Step 2:** Convert each number to binary (8 bits).
-
-- 72 = 64 + 8 → `01001000`
-- 105 = 64 + 32 + 8 + 1 → `01101001`
-
-So `Hi` is stored as `01001000 01101001`. That is 2 bytes.
-
-### Activity
-
-1. The ASCII number for `C` is 67. Write `C` in 8-bit binary.
-2. How many bits are in 3 bytes?
-3. A photo is 3 MB. How many of these photos fit on a 12 GB phone? (Use 1 GB = 1,000 MB.)
-4. What is a pixel?
-
-### Answer
-
-<details>
-<summary>Click to show the answer</summary>
-
-1. 67 = 64 + 2 + 1 → **01000011**
-2. 3 × 8 = **24 bits**
-3. 12 GB = 12,000 MB. 12,000 ÷ 3 = **4,000 photos**
-4. A pixel is one tiny dot of color in an image. A picture is made of a grid of many pixels.
-
-</details>
-
----
-
-## 3.4 Types of Data Storage
-
-### Explanation
-
-Storage is grouped into three types, based on how fast it is and how long it keeps data.
-
-| | **Primary storage** | **Secondary storage** | **Tertiary storage** |
-|---|---|---|---|
-| **Also called** | Main memory | Permanent storage | Archive storage |
-| **Speed** | Fast, directly accessed by the CPU | Slower than primary | Slowest |
-| **Keeps data when power is off?** | Usually no (RAM), but ROM does | Yes | Yes |
-| **Capacity (size)** | Smaller | Larger than primary | Very large |
-| **Examples** | RAM, ROM | HDD, SSD, optical discs, USB drives | Magnetic tape, cloud "cold" storage |
-| **Typical use** | Running programs right now | Saving files and programs | Long-term backups that are rarely opened |
-
-Two kinds of primary memory:
-
-- **RAM (Random Access Memory):** volatile. Holds data while the device is on.
-- **ROM (Read-Only Memory):** non-volatile. Holds permanent start-up instructions (called **firmware**) that the computer needs to switch on.
-
-[insert image about primary, secondary, and tertiary storage examples]
-
-### Worked Example
-
-**Question:** Is a USB drive primary or secondary storage?
-
-**Solution:** **Secondary.** It keeps data when unplugged or powered off, it has a larger capacity than RAM, and it is slower than RAM. All three match secondary storage.
-
-### Activity
-
-Classify each as primary, secondary, or tertiary storage:
-
-1. RAM
-2. SSD
-3. A magnetic tape in a company's backup room
-4. A Blu-ray disc
-
-### Answer
-
-<details>
-<summary>Click to show the answer</summary>
-
-1. Primary
-2. Secondary
-3. Tertiary
-4. Secondary (optical disc)
-
-</details>
-
----
-
-## 3.5 Data Storage Devices (HDD, SSD, USB Drives)
-
-### Explanation
-
-| Device | How it works | Pros | Cons |
-|---|---|---|---|
-| **HDD** (Hard Disk Drive) | Stores data on spinning metal disks using magnetism | Large capacity, low cost | Slower; has moving parts that can break |
-| **SSD** (Solid State Drive) | Stores data in **flash memory** chips (memory with no moving parts) | Faster, quieter, more durable | Costs more per GB |
-| **USB drive** | A small portable flash memory stick that plugs into a USB port | Small and easy to carry | Easy to lose; smaller capacity |
-| **Optical disc** (CD, DVD, Blu-ray) | Data is read from the disc with a laser | Cheap; good for media and backups | Slow; can be scratched |
-
-[insert image about an HDD, an SSD, and a USB drive side by side]
-
-#### Useful storage ideas
-
-| Term | Meaning |
-|---|---|
-| **Capacity** | How much data a device can hold (measured in GB or TB) |
-| **Access speed** | How fast data can be read or written |
-| **Durability** | How well the device keeps data safe over time without damage |
-| **Scalability** | How easily you can add more space (cloud storage is easy to scale) |
-
-#### Cloud storage
-
-**Cloud storage** means saving your data in a data center owned by another company and reaching it over the internet. You can open your files on any device. The company looks after the servers, but **you** are still responsible for looking after your own data (for example, using a strong password).
-
-[insert image about how cloud storage works, with a client computer, a control node, and several storage servers]
-
-Cloud storage can be organized in three ways:
-
-| Form | How it works | Best for |
-|---|---|---|
-| **File storage** | Data is saved as files inside folders, like on your own computer | Everyday documents |
-| **Block storage** | Data is split into fixed-size pieces called blocks, each with its own ID | Databases that need speed |
-| **Object storage** | Data is saved as objects, each with an ID and **metadata** (information that describes the data, such as its date and type) | Photos, videos, and backups |
-
-[insert image about block, file, and object storage]
-
-#### Keeping data safe
-
-- **Backup:** a spare copy of your data in case the original is lost or damaged. Keep it on an external drive or in the cloud.
-- **Encryption:** scrambling data so only people with the right key can read it.
-- **Access control:** deciding who is allowed to open or change the data (using accounts and passwords).
-- **Data integrity:** making sure data stays correct and has not been changed by mistake.
-
-### Worked Example
-
-**Question:** A school wants to store 10 years of old exam papers. They rarely need them, but must not lose them. Which device or storage type would work well, and why?
-
-**Solution:** An **HDD** or **cloud storage** is a good fit. HDDs offer large capacity at low cost, and speed is not important because the files are rarely opened. The school should also keep a **backup** copy in a second place so one failure does not lose everything.
-
-### Activity
-
-1. Which is faster, an HDD or an SSD?
-2. Why does an SSD handle being dropped better than an HDD?
-3. What is a backup, and why is it useful?
-4. In cloud storage, who looks after the servers, and who looks after the data?
-
-### Answer
-
-<details>
-<summary>Click to show the answer</summary>
-
-1. The SSD is faster.
-2. An SSD has no moving parts. An HDD has spinning disks that can be damaged by a drop.
-3. A backup is a spare copy of your data. It is useful because you can restore your files if the original is lost, damaged, or deleted.
-4. The cloud company looks after the servers. The user (data owner) looks after their own data.
-
-</details>
-
----
-
-# Stage 4: Chapter Exercise
-
-Try these on your own first, then check the answers.
-
-### Part A: Computer components
-
-1. Name the four steps of the computer workflow, in order.
-2. Which component is called the "brain" of the computer?
-3. Is a printer an input device or an output device?
-4. Which type of computer is built inside a washing machine?
-
-### Part B: Number systems
-
-5. Convert `(10011)₂` to decimal.
-6. Convert 25 (decimal) to binary.
-7. Convert `(3C)₁₆` to binary.
-8. Convert `(11010110)₂` to hex.
-9. Convert `(5B)₁₆` to decimal.
-10. Convert 90 (decimal) to hex.
-
-### Part C: Data and storage
-
-11. How many bits are in 1 byte?
-12. Which type of memory loses its data when the power is turned off: RAM or SSD?
-13. Name two differences between an HDD and an SSD.
-14. Explain in one or two sentences how a picture is stored as binary.
-15. Is a Blu-ray disc primary, secondary, or tertiary storage?
-
-### Answers
-
-<details>
-<summary>Click to show the answers</summary>
-
-**Part A**
-
-1. Input → Processing → Storage → Output
-2. The CPU
-3. Output device
-4. Embedded computer
-
-**Part B**
-
-5. 16 + 2 + 1 = **19**
-6. 25 = 16 + 8 + 1 → **11001**
-7. 3 = `0011`, C = `1100` → **00111100**
-8. `1101` = D, `0110` = 6 → **D6**
-9. (5 × 16) + 11 = 80 + 11 = **91**
-10. 90 ÷ 16 = 5 r **10** (A); 5 ÷ 16 = 0 r **5** → **5A**
-
-**Part C**
-
-11. 8 bits
-12. RAM
-13. Any two of: an SSD is faster; an SSD has no moving parts and is more durable; an SSD usually costs more per GB; an HDD usually offers more capacity for the price.
-14. A picture is a grid of tiny pixels. The color of each pixel is stored as a number, and every number is saved in binary.
-15. Secondary storage (optical disc)
-
-</details>
-
----
-
-## Chapter Summary
-
-- A **computer** takes **input**, **processes** it, **stores** data, and gives **output**. Its core physical parts include the CPU, RAM, storage, motherboard, input devices, output devices, and power supply.
-- Computers use **binary** (base 2). **Hexadecimal** (base 16) is a short way to write binary, since 1 hex digit = 4 bits.
-- To convert between systems, use **place values** (multiplying and adding) or **repeated division** (reading the remainders from bottom to top).
-- All data (numbers, text, images, audio, and video) is stored as binary.
-- **Primary storage** (RAM) is fast but temporary. **Secondary storage** (SSD, HDD, USB) is slower but permanent.
+## Stage 1 Summary
+
+- A **computer** takes **data** (input), processes it using a **program**, and gives a result (output). It can also save data (storage).
+- The **Turing model** shows that a computer's output depends on its input data and its program.
+- The **von Neumann model** splits a computer into **Memory**, **ALU**, **Control Unit**, and **Input/Output**, and stores programs and data together.
+- Computers have **hardware** (physical parts), **software** (programs), and **data**.
+- Computers use **binary** (0s and 1s). **ASCII** turns characters into binary codes.
+- The basic workflow is **Input → Processing → Storage → Output**.
+- Computers come in many types, such as PCs, smartphones, servers, supercomputers, and embedded computers.
