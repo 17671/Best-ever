@@ -1015,3 +1015,466 @@ b. 300 ÷ 16 = 18 r 12 (C), 18 ÷ 16 = 1 r 2, 1 ÷ 16 = 0 r 1. Reading from the 
 - **Decimal to binary**: Divide by 2 again and again, then read the remainders from bottom to top.
 - **Binary to hex**: Group the bits in fours (adding zeros on the left if needed) and replace each group with a hex digit. **Hex to binary**: Replace each hex digit with its 4 bits.
 - **Hex to decimal**: Multiply each digit by its power of 16 and add. **Decimal to hex**: Divide by 16 again and again, then read the remainders from bottom to top.
+
+# Stage 3: Data Storage
+
+## Learning Goals
+
+By the end of this stage you should be able to:
+
+1. Identify the core physical components of a computer that store data and explain their basic functions.
+2. Explain how data is stored and retrieved inside a computer.
+3. Describe how numbers, text, images, audio and video are represented in binary.
+4. Compare primary and secondary storage.
+5. Compare common storage devices (HDD, SSD, optical discs, USB drives) and choose the right one for a job.
+
+
+**Topics covered:**
+
+1. [Definition](#1-definition)
+2. [How Does Data Storage Work?](#2-how-does-data-storage-work)
+3. [Representing Data in Binary](#3-representing-data-in-binary)
+4. [Types of Data Storage](#4-types-of-data-storage-primary-and-secondary)
+5. [Data Storage Devices](#5-data-storage-devices-hdd-ssd-usb-drives)
+6. [Summary and Revision Checklist](#6-summary-and-revision-checklist)
+
+---
+
+## 1. Definition
+
+### Explanation
+
+**Data** is any information a computer can work with, such as a number, a word, a photo or a song.
+
+**Storage** is the part of a computer that holds data so the **CPU** (Central Processing Unit, the "brain" that carries out instructions) and other components can reach it when they need it.
+
+Storage is not one single part. A computer uses **several kinds** of storage together:
+
+- Some storage is **very fast** but small and temporary.
+- Some storage is **slower** but large and permanent.
+
+Two words you will see often:
+
+| Term | Meaning |
+|---|---|
+| **Volatile** | Loses its data when the power is turned off. |
+| **Non-volatile** | Keeps its data even when the power is off. |
+
+### Worked Example
+
+You are writing an essay.
+
+- While you type, the text sits in a fast, temporary storage area. If the power suddenly cuts out, the unsaved text is gone. This storage is **volatile**.
+- When you press **Save**, the essay is copied to a permanent storage area. You can switch the computer off and open the essay tomorrow. This storage is **non-volatile**.
+
+### Activity
+
+Write **V** (volatile) or **N** (non-volatile) for each situation:
+
+1. A web page you have open but have not saved.
+2. A photo saved on a USB flash drive.
+3. A game installed on your computer's drive.
+4. The numbers a calculator program is using right now.
+
+### Answer
+
+1. **V**, open and unsaved data lives in temporary storage.
+2. **N**, a USB drive keeps data without power.
+3. **N**, installed programs are kept permanently.
+4. **V**, data in use right now is held in temporary storage.
+
+---
+
+## 2. How Does Data Storage Work?
+
+### Explanation
+
+A computer moves data between storage areas all the time. A simplified journey looks like this:
+
+1. **Secondary storage** (permanent) holds your files and programs.
+2. When you open something, the data is copied into **RAM** (fast, temporary memory).
+3. The CPU reads from RAM, because it is much quicker than reading from permanent storage.
+4. When you save, the data is copied back to secondary storage.
+
+**RAM** acts as a **high-speed buffer** (a waiting area) between the CPU and slower storage devices such as hard drives. It lets the computer quickly find and process the data needed to run applications and carry out commands.
+
+Where does the data travel? Through the **motherboard**, the main circuit board that connects all the parts. Two things on the motherboard affect how smoothly memory and CPU "talk" to each other:
+
+- The **chipset**, a group of chips that manages communication between components.
+- The **bus speed**, how fast data can travel along the connecting pathways (the **bus**).
+
+The motherboard also has **memory slots** where RAM modules are plugged in.
+
+### Worked Example
+
+You double-click a video game.
+
+| Step | What happens |
+|---|---|
+| 1 | The game's files are found on the SSD or hard drive (secondary storage). |
+| 2 | The parts of the game that are needed are copied into RAM. |
+| 3 | The CPU reads the game's instructions from RAM and runs them. |
+| 4 | When you save your progress, a save file is written back to the drive. |
+
+### Activity
+
+Put these steps in the correct order:
+
+- A. The CPU processes the data in RAM.
+- B. The file is saved back to the drive.
+- C. You open a file stored on the drive.
+- D. The file's data is copied into RAM.
+
+### Answer
+
+**C → D → A → B**
+
+You open the file (C), it is copied to RAM (D), the CPU works on it (A), then it is saved back (B).
+
+---
+
+## 3. Representing Data in Binary
+
+### Explanation
+
+Computers are built from electronic switches that are either **on** or **off**. This is why they use **binary**, a number system with only two digits: **0** and **1**.
+
+- A **bit** (binary digit) is a single 0 or 1.
+- A **byte** is a group of **8 bits**.
+
+Everything stored in a computer (numbers, text, images, audio, video) is turned into long strings of bits.
+
+**Storage units** (we use 1000 for simplicity; some systems use 1024):
+
+| Unit | Size |
+|---|---|
+| 1 byte (B) | 8 bits |
+| 1 kilobyte (KB) | 1,000 bytes |
+| 1 megabyte (MB) | 1,000 KB |
+| 1 gigabyte (GB) | 1,000 MB |
+| 1 terabyte (TB) | 1,000 GB |
+
+---
+
+### 3.1 Numbers
+
+#### Explanation
+
+Binary is a **place-value** system. In everyday (decimal) numbers the places are ones, tens, hundreds. In binary the places are **powers of 2**:
+
+| Place value | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+|---|---|---|---|---|---|---|---|---|
+
+To write a number in binary, put a **1** under each place value you need and a **0** under the rest.
+
+#### Worked Example
+
+Convert **13** to binary.
+
+- 13 = 8 + 4 + 1
+- Place values: 8 → 1, 4 → 1, 2 → 0, 1 → 1
+
+| 8 | 4 | 2 | 1 |
+|---|---|---|---|
+| 1 | 1 | 0 | 1 |
+
+**13 in binary = 1101** (or `00001101` in a full byte).
+
+#### Activity
+
+Convert **10** to binary.
+
+#### Answer
+
+10 = 8 + 2 → **1010**.
+
+---
+
+### 3.2 Text
+
+#### Explanation
+
+Computers cannot store letters directly, so every character gets a number. A **character code** is a table that links characters to numbers. A common one is **ASCII** (American Standard Code for Information Interchange). The number is then stored in binary.
+
+| Character | ASCII number | Binary |
+|---|---|---|
+| A | 65 | 01000001 |
+| B | 66 | 01000010 |
+| a | 97 | 01100001 |
+
+Each character uses 1 byte in basic ASCII.
+
+#### Worked Example
+
+Store the word **"Hi"**.
+
+- H = 72 → `01001000`
+- i = 105 → `01101001`
+
+"Hi" = `01001000 01101001`, which is **2 bytes**.
+
+#### Activity
+
+1. The ASCII number for **C** is 67. Write it in binary.
+2. How many bytes does the word **"CAT"** need in ASCII?
+
+#### Answer
+
+1. 67 = 64 + 2 + 1 → **01000011**
+2. 3 characters × 1 byte = **3 bytes**.
+
+---
+
+### 3.3 Images
+
+#### Explanation
+
+A digital image is a grid of tiny squares called **pixels**. Each pixel stores a colour as a binary number.
+
+- **Resolution:** the number of pixels (width × height).
+- **Colour depth:** the number of bits used for each pixel. More bits means more possible colours.
+
+| Colour depth | Colours possible |
+|---|---|
+| 1 bit | 2 (black and white) |
+| 8 bits | 256 |
+| 24 bits | about 16.7 million |
+
+**File size = number of pixels × colour depth (in bits).** Divide by 8 to get bytes.
+
+#### Worked Example
+
+A small image is **100 × 100 pixels** with **24-bit** colour.
+
+- Pixels: 100 × 100 = 10,000
+- Bytes per pixel: 24 ÷ 8 = 3
+- Size: 10,000 × 3 = **30,000 bytes = 30 KB**
+
+#### Activity
+
+A black-and-white (1-bit) image is **8 × 8 pixels**. How many bytes does it need?
+
+#### Answer
+
+8 × 8 = 64 pixels × 1 bit = 64 bits ÷ 8 = **8 bytes**.
+
+---
+
+### 3.4 Audio
+
+#### Explanation
+
+Sound is a smooth wave. To store it, the computer measures the wave many times per second. Each measurement is called a **sample**.
+
+- **Sample rate:** how many samples are taken each second (measured in **Hz**).
+- **Bit depth:** how many bits are used for each sample.
+
+More samples and more bits give better quality, but a bigger file.
+
+**File size = sample rate × bit depth × seconds** (in bits; divide by 8 for bytes).
+
+#### Worked Example
+
+One second of mono audio, **44,100 Hz**, **16 bits**:
+
+- 44,100 × 16 = 705,600 bits
+- 705,600 ÷ 8 = **88,200 bytes** (about 88 KB)
+
+#### Activity
+
+A voice recording uses **8,000 Hz** and **8 bits** per sample. How big is **10 seconds**?
+
+#### Answer
+
+8,000 × 8 × 10 = 640,000 bits ÷ 8 = 80,000 bytes = **80 KB**.
+
+---
+
+### 3.5 Video
+
+#### Explanation
+
+A video is a fast series of still images called **frames**, played together with audio.
+
+- **Frame rate:** frames shown per second (**fps**).
+
+A video's size grows quickly because it stores many images every second. Most videos are **compressed**, meaning the file is made smaller by removing or simplifying data, so they take far less space than the raw calculation suggests.
+
+**Uncompressed size ≈ size of one frame × frames per second × seconds** (plus audio).
+
+#### Worked Example
+
+Each frame is 1 MB and the video runs at 10 fps.
+
+- 1 second = 10 × 1 MB = 10 MB
+- 3 seconds = **30 MB**
+
+#### Activity
+
+Each frame is 2 MB and the video runs at 5 fps. How big is **4 seconds** of uncompressed video?
+
+#### Answer
+
+2 MB × 5 fps × 4 s = **40 MB**.
+
+---
+
+## 4. Types of Data Storage (Primary and Secondary)
+
+### 4.1 Primary Storage
+
+#### Explanation
+
+**Primary storage** is memory the CPU can reach directly and very quickly. It includes RAM, ROM and cache.
+
+**RAM (Random Access Memory)**
+- Holds data and programs **while the computer is running**.
+- Very fast.
+- **Volatile:** everything is lost when the power is off.
+- Comes as modules plugged into the motherboard, such as **DDR4** or **DDR5** (types of RAM with different speeds and capacities).
+
+**ROM (Read-Only Memory)**
+- Holds data that **cannot be easily changed**.
+- **Non-volatile:** keeps its data without power.
+- In modern computers it usually holds **firmware**, software built into hardware that tells the device how to start up and work.
+
+**Cache memory**
+- A **smaller, faster** type of volatile memory placed **close to the CPU**.
+- Stores **frequently used** information so the CPU does not have to wait for RAM.
+
+#### Worked Example
+
+When you switch on a laptop:
+
+1. **ROM** provides the firmware that starts the computer.
+2. The system loads into **RAM**.
+3. Instructions the CPU uses again and again are kept in **cache** for speed.
+
+#### Activity
+
+Match each description to **RAM**, **ROM** or **Cache**:
+
+1. Keeps the start-up firmware, even when the power is off.
+2. Holds the programs you have open right now.
+3. Small, very fast memory next to the CPU for frequently used data.
+
+#### Answer
+
+1. **ROM**
+2. **RAM**
+3. **Cache**
+
+---
+
+### 4.2 Secondary Storage
+
+#### Explanation
+
+**Secondary storage** is for **permanent** storage. It includes hard drives (HDD), solid-state drives (SSD), optical drives and USB flash drives.
+
+- **Non-volatile:** data stays when the computer is off.
+- **Larger capacity** than primary storage.
+- **Slower** than primary storage.
+- Used for documents, system files, applications and databases.
+
+#### Primary vs Secondary at a glance
+
+| Feature | Primary storage (RAM) | Secondary storage |
+|---|---|---|
+| Speed | Very fast | Slower |
+| Capacity | Smaller | Much larger |
+| Volatile? | Yes (RAM) | No |
+| Purpose | Data in use right now | Long-term saving |
+| Examples | RAM, cache, ROM | HDD, SSD, USB drive, DVD |
+
+#### Worked Example
+
+Why not just save everything in RAM, since it is so fast?
+
+Because RAM needs constant power, everything would vanish when you switch off. So data that is not being used right now is **moved to secondary storage**, which is slower but keeps it safe.
+
+#### Activity
+
+A student has a **16 GB RAM** laptop and a **512 GB SSD**. Which one holds her photos after she shuts down the laptop, and why?
+
+#### Answer
+
+The **SSD**. It is secondary storage, so it is non-volatile and keeps the photos without power. RAM is volatile and would lose them.
+
+---
+
+## 5. Data Storage Devices (HDD, SSD, USB Drives)
+
+### Explanation
+
+| Device | How it works | Main points |
+|---|---|---|
+| **Hard Disk Drive (HDD)** | Stores data magnetically on **spinning platters** (disks). | Large capacity, traditional, has moving parts. |
+| **Solid-State Drive (SSD)** | Uses **flash memory** (chips that keep data without power). | Much faster than HDD, **no moving parts**. |
+| **Optical storage** | A laser reads data from discs such as **CDs, DVDs and Blu-rays**. | Used for media or backup files. |
+| **USB flash drive** | A small **solid-state** device that connects through a **USB port**. | Portable; capacities from a few GB up to several TB. |
+
+#### USB drives in more detail
+
+USB drives are commonly used to **transfer files** between devices and for **backup**.
+
+**Advantages**
+- **Portable:** small and light, easy to carry.
+- **Plug-and-play:** no installation needed. Plug it into a USB port and it is ready to use.
+
+**Disadvantages**
+- **Limited lifespan:** like all flash storage, a USB drive can only be written to a limited number of times (called **write cycles**). Most people will never reach this limit unless they use the drive heavily.
+- **Easy to lose or damage:** its small size means it can be misplaced or damaged if handled carelessly.
+
+#### Data access and retrieval
+
+- **Primary storage (RAM)** is much faster than secondary storage, so the CPU can get data quickly. It needs a constant power supply, which is why data not in use is moved to secondary storage.
+- **Secondary storage** offers more capacity and long-term storage, but at slower speeds.
+
+### Worked Example
+
+**Task:** A photographer needs to carry 20 GB of photos to a friend's house.
+
+- Needs: portable, easy to use on any computer, enough capacity.
+- Best choice: a **USB flash drive** (e.g. 64 GB). It is small, plug-and-play, and 64 GB is plenty.
+- Why not an HDD? Less convenient to carry and has moving parts that can be damaged by knocks.
+
+Extra check: if each photo is 4 MB, how many fit on a 64 GB drive? 64 GB = 64,000 MB, and 64,000 ÷ 4 = **16,000 photos**.
+
+### Activity
+
+Choose the best device for each situation and give one reason:
+
+1. A laptop that must start up and open programs as fast as possible.
+2. A cheap way to keep 4 TB of rarely used old videos at home.
+3. Quickly moving a school presentation from one computer to another.
+4. Distributing a film to customers on a disc.
+
+### Answer
+
+1. **SSD**, it is much faster and has no moving parts.
+2. **HDD**, it offers large capacity at a lower cost per GB.
+3. **USB flash drive**, it is portable and plug-and-play.
+4. **Optical disc (DVD/Blu-ray)**, it is designed for storing and distributing media.
+
+---
+
+## 6. Summary and Revision Checklist
+
+**Key points**
+
+- **Storage** holds data so the CPU and other components can access it.
+- Computers store everything as **binary** (0s and 1s). 8 bits = 1 byte.
+- **Numbers** use place values (powers of 2), **text** uses character codes like ASCII, **images** use pixels, **audio** uses samples, and **video** uses frames.
+- **Primary storage** (RAM, ROM, cache) is fast and close to the CPU. RAM and cache are volatile.
+- **Secondary storage** (HDD, SSD, optical, USB) is slower, larger and non-volatile.
+- **HDD** = spinning magnetic platters. **SSD** = flash, faster, no moving parts. **USB drive** = portable flash storage.
+
+**Can you do these?**
+
+- [ ] Explain the difference between volatile and non-volatile storage.
+- [ ] Describe the path of data from drive to RAM to CPU and back.
+- [ ] Convert a small number to binary.
+- [ ] Calculate the size of a simple image or sound.
+- [ ] Compare RAM, ROM and cache.
+- [ ] Compare HDD, SSD, optical and USB storage and pick one for a task.
