@@ -1,8 +1,14 @@
-# PikaByte — Project Plan
+# Project Plan
+
+**Course:** Foundations of Computer Science & AI  
+**Team:** PikaByte  
+**Selected module:** Hardware, Networks & Behaviorist AI  
+**Purpose:** This document outlines the project scope, assigned roles, and strategic workflow.    
+**Repository:** https://github.com/17671/Best-ever
 
 ## 1. Team Information and Responsibilities
 
-### 1. KHO EDUARD (1820262087) — CEO
+### KHO EDUARD (1820262087) — CEO
 **GitHub:** @Infektt
 
 **Strengths:**
@@ -26,7 +32,7 @@
 * Ensures all members consistently update the project log, their personal logs, and AI-use records.
 * Writes meeting summaries in `/logs/meetings/`.
 
-### 2. HAKAMI QASEM NABIL QASEM (1820262088) — CIO / Submission Lead & Content Helper
+### HAKAMI QASEM NABIL QASEM (1820262088) — CIO / Submission Lead & Content Helper
 **GitHub:** @Bn1adn
 
 **Strengths:**
@@ -51,7 +57,7 @@
 * Cross-checks GitHub progress against the `tasks.md` to ensure nothing is missing before submission.
 * Helps content lead with simple tasks.
 
-### 3. MARGARIT SERBAN ALEXANDRU (1820262117) — Content Lead
+### MARGARIT SERBAN ALEXANDRU (1820262117) — Content Lead
 **GitHub:** @17671
 
 **Strengths:**
@@ -70,7 +76,7 @@
 * Refines written materials flagged for improvement.
 * Updates `tasks.md` changing the tasks status to either "In progress" or "Waiting for review".
 
-### 4. 梁启德 (1820262075) — Quality Lead
+### 梁启德 (1820262075) — Quality Lead
 **GitHub:** @Solgitt
 
 **Strengths:**
@@ -96,7 +102,7 @@
   * Checks that commit messages, attached screenshots, and personal logs actually match the real work done. If a commit claims "finished slides" but the file is empty, they flag it by opening an issue or just notifying the team via wechat.
 * Acts as the last checkpoint before the CIO submits to Lexue.
 
-### 5. 谢美美 (1820262040) — Video Lead
+### 谢美美 (1820262040) — Video Lead
 **GitHub:** @lxnawnk
 
 **Strengths:**
@@ -118,7 +124,7 @@
 * Collaborates with the Visual Lead for graphics and the Content Lead for script accuracy.
 * Updates `tasks.md` changing the tasks status to either "In progress" or "Waiting for review".
 
-### 6. KHOJANOVA ALINA (1820262100) — Visual Design Lead & Video Helper
+### KHOJANOVA ALINA (1820262100) — Visual Design Lead & Video Helper
 **GitHub:** @alinaalinok1532-eng
 
 **Strengths:**
@@ -140,7 +146,7 @@
 * Updates `tasks.md` changing the tasks status to either "In progress" or "Waiting for review".
 * Helps video lead with simple tasks.
 
-### 7. AL-HATTAMI HAMID SALEEM NAEL (1820262063) — Visual Design Lead
+### AL-HATTAMI HAMID SALEEM NAEL (1820262063) — Visual Design Lead
 **GitHub:** @alhattamihameed2-collab
 
 **Strengths:**
@@ -179,23 +185,26 @@ By the end of this module, learners should be able to:
 5. Recognize the limitations of AI and the importance of security and human oversight.
 
 **Content Outline:**
-1.  **Computer Hardware Basics:** CPU, GPU, RAM, storage, sensors, I/O devices.
-    - *Status:* Waiting for review.
-2.  **Network Basics:** Networks, routers, servers, Wi-Fi, Ethernet, data packets, latency.
-    - *Status:* Waiting for review.
-3.  **Artificial Intelligence Basics:** AI models, training data, inference, predictions.
-    - *Status:* TBD.
-4.  **How Hardware, Networks, and AI Work Together:** Data processing, edge AI, cloud AI.
-    - *Status:* TBD.
-5.  **AI Behaviour and Limitations:** Model outputs, bias, incomplete data, human oversight.
-    - *Status:* TBD.
-6.  **Real-World Applications of AI:** Smart homes, robotics, autonomous vehicles.
-    - *Status:* TBD.
-7.  **Security, Privacy, and Reliability:** Data privacy, cybersecurity, system failures.
-    - *Status:* TBD.
+
+| Section | Planned Content | Status |
+| --- | --- | --- |
+| **Chapter 1.1: Number Systems and Data** | • **Computers and Data:** Definition, Basic Workflow, Different Types of Computers.<br>• **Number Systems:** Overview, Binary, Decimal to Binary, Binary to Decimal, Hexadecimal to Binary, Binary to Hexadecimal, Hexadecimal to Decimal, Decimal to Hexadecimal.<br>• **Data Storage:** Definition, How Data Storage Works, Representing Data in Binary, Types (primary/secondary), Devices (HDD, SSD, USB drives). | Outline only |
+| **Chapter 1.2: Hardware and the Von Neumann Model** | • **Von Neumann Model:** Definition, Process (fetch-decode-execute), Components (CPU, ALU, Memory, Input, Output).<br>• **Computer Hardware:** Hardware Definition, Input Devices, Output Devices, Internal Hardware (Motherboard, CPU, RAM, ROM, Graphics Card, Power Supply), Ports and External Storage.<br>• **Program Execution:** Definition, How Program Execution Works. | Outline only |
+| **Chapter 2.1: Network and Internet Basics** | • **What Is a Computer Network?:** Network overview, Why computers are networked.<br>• **Network Fundamentals:** Devices (Server, Switch, Router, Modem, Access point), Media (Wired, Wireless), Types (LAN, WAN), Layouts (Star, Mesh).<br>• **Internet Fundamentals:** Internet vs the web, TCP/IP, IP addresses, Domain names and DNS, URL parts and from click to page. | Outline only |
+| **Chapter 2.2: Network Security** | • **Security in Networks:** Why it matters, Privacy (confidentiality), Authentication, Integrity, Nonrepudiation, Common protections (Firewall, Encryption). | Outline only |
+| **Chapter 3.1: Intro to Behaviorist AI & RL** | • **Introduction to Behaviorist AI:** Definition, Basic Process and Example.<br>• **Basics of Reinforcement Learning:** Reinforcement Learning (agent, environment, actions, rewards), Model-Based vs Model-Free. | Outline only |
+| **Chapter 3.2: RL Algorithms and MDPs** | • **Markov Decision Processes (MDPs):** MDP (1) States/Actions/Rewards, MDP (2) Policy.<br>• **RL Algorithms and Techniques:** RL Algorithms overview, Value-Based (Q-Learning), Exploration vs. Exploitation. | Outline only |
+| **Chapter 3.3: AI in Robotics and Games** | • **Behaviorist AI in Robotics and Games:** Behaviorist AI in Robotics (sensing, acting, learning), Behaviorist AI in Games (game-playing agents).<br>• **Applications and Use Cases:** Applications and Usages, Examples in the Real World. | Outline only |
+| **Chapter 3.4: AI Challenges and Limitations** | • **Challenges and Limitations:** Challenges (reward design, exploration vs exploitation, data and computing cost), Limitations (safety, generalization, explainability). | Outline only |
+<br>
 
 **Scope Boundaries:** 
-We will deeply explain the foundational concepts in Topics 1, 2, and 3 using everyday analogies. For Topics 4–7, we will provide a high-level overview of how these technologies integrate and affect society, avoiding deep technical math or complex protocols to keep the material accessible to absolute beginners.
+
+This module provides a beginner-friendly material for understanding the foundations of Hardware, Networks, and Behaviorist AI. The scope is limited to these core topics:
+
+*   **Hardware & Data:** Number systems (binary, decimal, hex), data storage, the Von Neumann model, program execution, and core physical components (CPU, RAM, I/O).
+*   **Networks & Security:** Network fundamentals (LAN/WAN, Star/Mesh), internet basics (TCP/IP, IP addresses, DNS, URLs), and the four core security goals (Privacy, Authentication, Integrity, Nonrepudiation).
+*   **Behaviorist AI:** The Reinforcement Learning loop (Agent, Environment, Action, Reward), Markov Decision Processes (MDPs), conceptual Q-Learning, real-world applications (robotics/games), and AI limitations.
 
 ## 3. Planned Learning Resources
 
@@ -212,11 +221,10 @@ We use VS Code and GitHub for tracking changes. `main` can be edited directly on
 **Communication & Review:**
 We communicate daily via a WeChat group and hold in-person meetings at the 24HR Study Point. Peer review is conducted entirely through GitHub PRs, ensuring all corrections are documented.
 
-**Schedule & Internal Deadlines:**
-To ensure high quality, all internal deadlines are set 1 day before the official Lexue deadlines.
-- **Stage 1 (Due Oct 24):** Planning, content foundation, and first developed topic. *(Internal deadline: Oct 23)*
-- **Stage 2 (Due Nov 7):** All content drafted, first versions of slides/videos ready. *(Internal deadline: Nov 6)*
-- **Stage 3 (Due Nov 28):** Final review, proofreading, and final delivery. *(Internal deadline: Nov 27)*
+**Schedule & Deadlines:**
+- **Stage 1 (Due Oct 24):** Planning, content foundation, and first developed topic.
+- **Stage 2 (Due Nov 7):** All content drafted, first versions of slides/videos ready.
+- **Stage 3 (Due Nov 28):** Final review, proofreading, and final delivery.
 
 **Main Risks and Responses:**
 1.  *Risk:* Team members unfamiliar with Git/VS Code.

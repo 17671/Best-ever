@@ -21,9 +21,9 @@
 - **[Source Content](/content/)** (`/content/`) - The Markdown text and examples on which all our deliverables are based.
 
 ## 4. Project Tracking
-- **[Project Plan](project-plan.md)** (`project-plan.md`) - The outline of the project with each member's responsibilities, scope, workflow, and schedule.
+- **[Project Plan](main/project-plan.md)** (`main/project-plan.md`) - The outline of the project with each member's responsibilities, scope, workflow, and schedule.
 - **[Module Outline](content/module-outline.md)** (`content/module-outline.md`) - The 7 learning topics' outlines and their current development statuses.
-- **[Task List](tasks.md)** (`tasks.md`) - Task descriptions, deadlines and current completion statuses.
+- **[Task List](main/tasks.md)** (`main/tasks.md`) - Task descriptions, deadlines and current completion statuses.
 - **[Project Log](/logs/project-log.md)** (`/logs/project-log.md`) - Chronological record of team contributions and evidence.
 - **[Meeting Summaries](/logs/meetings/)** (`/logs/meetings/`) - Meeting dates, locations, topics, and decisions.
 - **[Supporting Assets](/assets/)** (`/assets/`) - All media used in our materials and logs, organized into:
