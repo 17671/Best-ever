@@ -37,4 +37,4 @@
 - **Completed:** Repository setup, `README.md`, `manual.md`, `project-plan.md`, `tasks.md`, and the finalized 8-chapter `module-outline.md` (to match the professor's PPT2024 scope). 
 - **In Progress:** Actively rewriting the 8 Markdown chapters to remove obsolete tech and add beginner-friendly activities. In parallel, the team is building the Study Guide (Word), PPT Slides, and Video Tutorials.
 - **Remaining:** Finalizing the separate Test Bank, Question Bank, and compiling the required Stage 2 project and personal logs. The Live Mini Lecture (Stage 3) will begin after the November 7th deadline.
-- **Details:** See our [Module Outline](module-outline.md) for the exact development status of each chapter.
+- **Details:** See our [Module Outline](content/module-outline.md) for the exact development status of each chapter.
