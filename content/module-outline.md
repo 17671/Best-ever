@@ -1,4 +1,10 @@
-# Hardware, Networks & Behavorist AI — Module Outline
+# Module Outline
+
+**Course:** Foundations of Computer Science & AI  
+**Team:** PikaByte  
+**Selected module:** Hardware, Networks & Behaviorist AI  
+**Purpose:** This document provides the module's chapter structure, learning goals, and current development statuses.  
+**Repository:** https://github.com/17671/Best-ever  
 
 ## Table of Contents
 
