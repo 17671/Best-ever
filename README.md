@@ -33,7 +33,8 @@
     - **[Manual](/assets/manual/)** (`/assets/manual/`) - Screenshots used in our team manual.
 
 ## 5. Current Project Progress
-- **Stage:** Stage 1 
-- **Completed:** Repository setup, README, Team Manual, and starting task list.
-- **In Progress:** Finishing changes after failing first assignment review.
-- **Remaining:** Stage 1 logs, Contents, PPTs, Topics 2 through 7 are currently **Outline only** and will be researched and drafted in Stage 3. Slide decks and video tutorials will follow after content approval. See our [Module Outline](content/module-outline.md) for details.
+- **Current Stage:** Stage 2 (Deadline: November 7, 2026)
+- **Completed:** Repository setup, `README.md`, `manual.md`, `project-plan.md`, `tasks.md`, and the finalized 8-chapter `module-outline.md` (to match the professor's PPT2024 scope). 
+- **In Progress:** Actively rewriting the 8 Markdown chapters to remove obsolete tech and add beginner-friendly activities. In parallel, the team is building the Study Guide (Word), PPT Slides, and Video Tutorials.
+- **Remaining:** Finalizing the separate Test Bank, Question Bank, and compiling the required Stage 2 project and personal logs. The Live Mini Lecture (Stage 3) will begin after the November 7th deadline.
+- **Details:** See our [Module Outline](module-outline.md) for the exact development status of each chapter.
