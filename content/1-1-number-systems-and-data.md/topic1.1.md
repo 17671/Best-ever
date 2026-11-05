@@ -134,7 +134,9 @@ The input stayed the same, but the program changed the output.
 
 Around 1944–1945, a mathematician named **John von Neumann** added a new idea to Turing's work. He pointed out that **programs and data are both just information**, so a computer can keep *both* in its **memory**.
 
+topic-2.2
 **Memory** is the part of the computer that holds programs and data while the computer is working. Before this idea, early computers had to be rewired by hand every time they needed to do a new job. With the von Neumann model, switching tasks is as easy as loading a different program.
+
 
 The **von Neumann model** splits a computer into four parts, called **subsystems**:
 
