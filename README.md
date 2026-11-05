@@ -1,42 +1,40 @@
-> [!NOTE]
-> "Include: A README identifying the team, selected module, members, and their GitHub usernames. A clear explanation of the project’s purpose and intended learners. An overview of the folder structure and where to find the content. The current project plan and task list, or a clearly identified location for them. A brief statement of the project’s current progress and remaining work."
->  > GitHub Repository and Markdown Content V1.0 (Section A)
+# PikaByte — Hardware, Networks & Behavorist AI
 
+## 1. Project Overview
+**Target Learners:** First-year university students with basic user-level computer skills, but no background in computer hardware, networking basics, or behaviorist AI concepts.
 
-# PikaByte
+**Purpose:** To develop a beginner-friendly educational material consisting of a Study Guide, PPT Slides, and Video Tutorials that introduce foundational concepts of computer hardware, network infrastructure, and behaviorist AI. This material aims to help learners understand the mechanics behind the technology they use everyday by translating complex concepts into easy analogies and step-by-step explanations.
 
-## Current Status
-- **Progress / Stage:** [...]
-- **Remaining Work:** [...]
+## 2. Team Information
+- **KHO EDUARD** - 1820262087 - @Infektt - **CEO**
+- **HAKAMI QASEM NABIL QASEM** - 1820262088 - @Bn1adn - **Submission Lead (CIO) and Content Lead Helper**
+- **MARGARIT SERBAN ALEXANDRU** - 1820262117 - @17671 - **Content Lead**
+- **梁启德** - 1820262075 - @Solgitt - **Quality Lead**
+- **谢美美** - 1820262040 - @lxnawnk - **Video Lead**
+- **KHOJANOVA ALINA** - 1820262100 - @alinaalinok1532-eng - **Visual Design Lead and Video Lead Helper**
+- **AL-HATTAMI HAMID SALEEM NAEL** - 1820262063 - @alhattamihameed2-collab - **Visual Design Lead**
 
-## Project Overview
-- **Module:** Hardware, Networks & Behavorist AI
-- **Target Learners:** [...]
-- **Purpose:** ["Create a Study Guide, PPT Slides, and Video Tutorials teaching beginners our module" or smt like that]
+## 3. Learning Materials
+- **[Study Guide](/study-guide/)** (`/study-guide/`) - Drafts and final versions.
+- **[PPT Slides](/slides/)** (`/slides/`) - Presentations.
+- **[Video Tutorials](/videos/)** (`/videos/`) - Demonstrations with narration.
+- **[Source Content](/content/)** (`/content/`) - The Markdown text and examples on which all our deliverables are based.
 
-## Team & Roles
-| Name | Student ID | GitHub Username | Role |
-|---|---|---|---|
-| 谢美美 | 1820262040 | @[lxnawnk] | [Video lead : coordinates recording and editing] |
-| AL-HATTAMI HAMID SALEEM NAEL | 1820262063 | @alhattamihami7-ops | [...] |
-| 梁启德 | 1820262075 | @[...] | [...] |
-| KHO EDUARD | 1820262087 | @Infektt  | [...] |
-| HAKAMI QASEM NABIL QASEM | 1820262088 | @[...] | [...] |
-| MARGARIT SERBAN ALEXANDRU | 1820262117 | @17671 | Content lead: checks scope, structure, and explanations. |
-| KHOJANOVA ALINA | 1820262100 | @[...] | [...] |
+## 4. Project Tracking
+- **[Project Plan](main/project-plan.md)** (`main/project-plan.md`) - The outline of the project with each member's responsibilities, scope, workflow, and schedule.
+- **[Module Outline](content/module-outline.md)** (`content/module-outline.md`) - The 7 learning topics' outlines and their current development statuses.
+- **[Task List](main/tasks.md)** (`main/tasks.md`) - Task descriptions, deadlines and current completion statuses.
+- **[Project Log](/logs/project-log.md)** (`/logs/project-log.md`) - Chronological record of team contributions and evidence.
+- **[Meeting Summaries](/logs/meetings/)** (`/logs/meetings/`) - Meeting dates, locations, topics, and decisions.
+- **[Supporting Assets](/assets/)** (`/assets/`) - All media used in our materials and logs, organized into:
+    - **[Visuals](/assets/visuals/)** (`/assets/visuals/`) - Diagrams and images for the learning materials.
+    - **[Work Evidence](/assets/work-evidence/)** (`/assets/work-evidence/`) - Proof of project work, including GitHub PRs, commits, and AI usage.
+    - **[Meeting Evidence](/assets/meeting-evidence/)** (`/assets/meeting-evidence/`) - Photos of the team working during meetings.
+    - **[Manual](/assets/manual/)** (`/assets/manual/`) - Screenshots used in our team manual.
 
-
-## Where Things Are
-- `/markdown` — [...]
-- `/study-guide` — [...]
-- `/slides` — [...]
-- `/videos` — [...]
-- `/logs` — [...]
-- `project-plan.md` — [...]
-
-## Logs
-- **Project Log:** [...]
-- **Meeting Summaries:** [...]
-
-> [!IMPORTANT]
-> *Personal logs are NOT stored here. Submit them via Lexue.*
+## 5. Current Project Progress
+- **Current Stage:** Stage 2 (Deadline: November 7, 2026)
+- **Completed:** Repository setup, `README.md`, `manual.md`, `project-plan.md`, `tasks.md`, and the finalized 8-chapter `module-outline.md` (to match the professor's PPT2024 scope). 
+- **In Progress:** Actively rewriting the 8 Markdown chapters to remove obsolete tech and add beginner-friendly activities. In parallel, the team is building the Study Guide (Word), PPT Slides, and Video Tutorials.
+- **Remaining:** Finalizing the separate Test Bank, Question Bank, and compiling the required Stage 2 project and personal logs. The Live Mini Lecture (Stage 3) will begin after the November 7th deadline.
+- **Details:** See our [Module Outline](content/module-outline.md) for the exact development status of each chapter.
