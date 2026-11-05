@@ -4,7 +4,11 @@
 
 By the end of this stage, you will be able to:
 
+<<<<<<< HEAD
+1. Identify the core physical components of a computer and explain their basic functions.
+=======
 1. Identify the core physical components of computers and explain their basic functions.
+>>>>>>> origin/topic-1.1
 
 **Topics covered:**
 
@@ -30,7 +34,11 @@ Every computer does four basic jobs:
 
 | # | Function | What it means | Example |
 |---|----------|---------------|---------|
+<<<<<<< HEAD
+| 1 | **Input** | Receives data from the outside world | Typing on a keyboard, moving a mouse |
+=======
 | 1 | **Input** | Receives data from the outside world | Typing on a keyboard, moving a mouse, a sensor reading |
+>>>>>>> origin/topic-1.1
 | 2 | **Processing** | Works on the data using the program's instructions | Adding numbers, comparing two values |
 | 3 | **Output** | Sends the finished result back to the user | Showing text on a screen, printing a page |
 | 4 | **Storage** | Saves data so it can be used later | Saving a file to a hard drive |
@@ -81,7 +89,11 @@ A **Turing Machine** is an imaginary (hypothetical) device with three parts:
 
 - A very long **tape** (it never ends) where symbols are written and read.
 - A **head** that reads and writes symbols on the tape.
+<<<<<<< HEAD
+- A set of **rules** that tell the head what to do next, based on the symbol it sees.
+=======
 - A set of **rules** that tell the head what to do next, based on the symbol it sees and its current state.
+>>>>>>> origin/topic-1.1
 
 [insert image about a Turing Machine with its tape and head]
 
@@ -89,10 +101,19 @@ From this idea comes the **Turing model**, which describes a computer as a **pro
 
 [insert image about a black box diagram: Input data -> Computer -> Output data]
 
+<<<<<<< HEAD
+In this model, the output depends on **two things**: the **input data** and the **program**. Changing either one can change the result. But running the *same program* with the *same input* always gives the *same output*.
+
+> **Note:** This model is a little too broad. Even a simple calculator fits this description, but we don't usually call a calculator a full computer.
+
+Turing's work also showed that any problem that *can* be solved by following steps can be solved by a computer, as long as it has the correct program.
+
+=======
 In this model, the output depends on **two things**: the **input data** and the **program**. Changing either one can change the result. But running the *same program* with the *same input* always gives the *same output*. Turing's work also showed that any problem that *can* be solved by following steps can be solved by a computer, as long as it has the correct program.
 
 > **Note:** This model is a little too broad. Even a simple calculator fits this description, but we don't usually call a calculator a full computer.
 
+>>>>>>> origin/topic-1.1
 ### Worked Example
 
 The input data is always `3, 12, 8, 22`. Watch how the output changes when only the program changes.
@@ -132,7 +153,11 @@ The input stayed the same, but the program changed the output.
 
 Around 1944–1945, a mathematician named **John von Neumann** added a new idea to Turing's work. He pointed out that **programs and data are both just information**, so a computer can keep *both* in its **memory**.
 
+<<<<<<< HEAD
+**Memory** is the part of the computer that holds programs and data while the computer is working. Before this idea, early computers had to be rewired by hand every time they needed to do a new job. With the von Neumann model, switching tasks is as easy as loading a different program.
+=======
 **Memory** is the part of the computer that holds programs and data while the computer is working. Before this idea, early computers had to be rewired by hand every time they needed to do a new job. With the von Neumann model, switching tasks is as easy as loading a different program. This model is the base of most modern computers.
+>>>>>>> origin/topic-1.1
 
 The **von Neumann model** splits a computer into four parts, called **subsystems**:
 
@@ -143,7 +168,11 @@ The **von Neumann model** splits a computer into four parts, called **subsystems
 | **Control Unit** | Manages and directs all the other parts, like a traffic controller |
 | **Input/Output** | Moves data between the computer and the outside world |
 
+<<<<<<< HEAD
+The control unit repeats a simple cycle: it **fetches** (gets) an instruction from memory, then **executes** (carries out) it, then moves on to the next one. This keeps programs running in an orderly and predictable way.
+=======
 The control unit repeats a simple cycle: it **fetches** (gets) an instruction from memory, then **executes** (carries out) it, then moves on to the next one, one after another. This keeps programs running in an orderly and predictable way.
+>>>>>>> origin/topic-1.1
 
 [insert image about the von Neumann model showing Memory, ALU, Control Unit, and Input/Output]
 
@@ -192,9 +221,15 @@ A computer is made of three main components:
 
 **Hardware** includes memory, the ALU, and the input/output parts. **Input** means the data or commands the computer receives from users or devices. **Output** means the result the computer gives back (such as a display or a printout). Together, they let the user and the computer communicate.
 
+<<<<<<< HEAD
+[insert image about input example (keyboard to computer) and output example (computer to printer)]
+
+Computers store and process data in **binary**, a number system that uses only two digits: `0` and `1`. Numbers, text, pictures, and sound must all be converted into binary before a computer can work with them. **Software** is what lets the hardware and the data work together, because it tells the hardware how to handle the data.
+=======
 [insert image about an input example (keyboard to screen) and an output example (screen to printer)]
 
 Computers store and process data in **binary**, a number system that uses only two digits: `0` and `1`. Numbers, text, pictures, and sound must all be converted into binary before a computer can work with them. **Software** is what lets the hardware and the data work together, because it tells the hardware how to handle the data. The idea of software began with early computers, where programs were set up by hand.
+>>>>>>> origin/topic-1.1
 
 Software has four key parts:
 
@@ -210,6 +245,9 @@ Software has four key parts:
 
    [insert image about an algorithm flowchart: Input -> Set of rules -> Output]
 
+<<<<<<< HEAD
+4. **Languages**: Early computers only understood **machine language**, which is written entirely in binary. Later, **symbolic languages** were created, which use letters and symbols so people can write programs more easily. One early standard is **ASCII** (explained in section 1.2.2).
+=======
 4. **Languages**: Early computers only understood **machine language**, which is written entirely in binary. Later, **symbolic languages** were created, which use letters and symbols so people can write programs more easily. The first standard one is **ASCII** (explained in section 1.2.2), which gives every character its own number and binary code:
 
    | Character | ASCII code | Binary code |
@@ -226,6 +264,7 @@ Software has four key parts:
    | 0 | 48 | 0110000 |
    | 1 | 49 | 0110001 |
    | Delete | 127 | 1111111 |
+>>>>>>> origin/topic-1.1
 
 ### Worked Example
 
@@ -261,11 +300,19 @@ Any answer with clear, ordered steps that gives the right result is correct.
 
 # 1.2 The Basic Workflow of a Computer
 
+<<<<<<< HEAD
+A **workflow** is the path that data follows from start to finish. In a computer, data moves through four stages:
+
+**Input → Processing → Storage → Output**
+
+[insert image about the computer workflow: input, processing, storage, output]
+=======
 A **workflow** is the path that data follows from start to finish. In a computer, data moves through four parts:
 
 **Input → Processing → Output**, with **Storage** connected to the processing step so data can be saved and retrieved.
 
 [insert image about the computer workflow: input, processing, output, with storage connected to processing]
+>>>>>>> origin/topic-1.1
 
 ---
 
@@ -334,7 +381,11 @@ c. Input device: **sensor**. Input data: **sensor signals** (temperature).
 
 ### Explanation
 
+<<<<<<< HEAD
+**Processing** means working on the input data by following the program's instructions. The **central processing unit (CPU)** does most of this work. Once the input interface delivers the data, the CPU:
+=======
 **Processing** means working on the input data by following the program's instructions, usually using logic and arithmetic. The **central processing unit (CPU)** does most of this work. It is the **processing unit** of the computer. Once the input interface delivers the data, the CPU:
+>>>>>>> origin/topic-1.1
 
 - **Analyzes** the data and converts it into a form the computer can use.
 - **Executes** (carries out) the needed operations. For example, if you press a key, the CPU recognizes it, converts it to binary, and triggers the matching action, like showing a letter on the screen.
@@ -348,6 +399,51 @@ Computers store data using the **binary system**. A **bit** (short for *binary d
 
 [insert image about a light bulb off (0) and a light bulb on (1)]
 
+<<<<<<< HEAD
+One bit is too small to hold anything useful, so computers **string many bits together** into a line of 1s and 0s.
+
+**ASCII**
+
+To turn text into binary, computers use a code. **ASCII** (American Standard Code for Information Interchange) is a **character encoding** scheme, which means a system that gives every letter, digit, and symbol its own number. ASCII uses **7 bits** for each character, which gives 128 different combinations (from `0000000` to `1111111`, or 0 to 127 in decimal). Thanks to ASCII, the CPU can turn binary into text that people can read.
+
+| Character | ASCII code | Binary code |
+|-----------|-----------|-------------|
+| null character | 0 | 0000000 |
+| a | 97 | 1100001 |
+| b | 98 | 1100010 |
+| c | 99 | 1100011 |
+| A | 65 | 1000001 |
+| B | 66 | 1000010 |
+| C | 67 | 1000011 |
+| % | 37 | 0100101 |
+| + | 43 | 0101011 |
+| 0 | 48 | 0110000 |
+| 1 | 49 | 0110001 |
+| Delete | 127 | 1111111 |
+
+### Worked Example
+
+**Task:** How does the computer store the word `Cab`?
+
+Look up each letter in the ASCII table:
+
+| Letter | ASCII code | Binary code |
+|--------|-----------|-------------|
+| C | 67 | 1000011 |
+| a | 97 | 1100001 |
+| b | 98 | 1100010 |
+
+So `Cab` is stored as: `1000011 1100001 1100010`
+
+### Activity
+
+Use the ASCII table above to answer:
+
+a. What is the binary code for `B`?
+b. What is the binary code for `+`?
+c. Which character does `0110001` stand for?
+d. How many different characters can 7-bit ASCII represent?
+=======
 One bit is too small to hold anything useful, so computers **string many bits together** into a line of 1s and 0s. Binary makes it easy for the hardware to store and work with information. From binary, computers can build bigger kinds of data, such as **integers** (whole numbers), **floating-point numbers** (numbers with a decimal point), and **characters** (letters and symbols).
 
 **Reading binary**
@@ -394,19 +490,108 @@ a. Convert `00101101` to decimal.
 b. What decimal number is `01000001`, and which character does it show?
 c. What is the binary code for `B`? (Use the ASCII table in 1.1.3.)
 d. Is Escape an alphanumeric character, a symbol, or a control character?
+>>>>>>> origin/topic-1.1
 
 <details>
 <summary><b>Answer</b></summary>
 
+<<<<<<< HEAD
+a. `1000010`
+b. `0101011`
+c. `1` (the digit one, ASCII 49)
+d. **128** characters (2 to the power of 7)
+=======
 a. 32 + 8 + 4 + 1 = **45**
 b. 64 + 1 = **65**, which is the letter **A**
 c. `1000010`
 d. A **control character**
+>>>>>>> origin/topic-1.1
 
 </details>
 
 ---
 
+<<<<<<< HEAD
+## 1.2.3 Storage
+
+### Explanation
+
+After data is processed, the computer often needs to **keep** it. **Storage** is the part of the computer that saves data so it can be used later. There are two main kinds:
+
+- **Memory (main memory)**: Fast, temporary space the computer uses while it is working. It is usually **volatile**, which means its contents are lost when the power is turned off. The most common type is **RAM** (Random Access Memory).
+- **Secondary storage**: Slower but permanent space that keeps data even when the power is off (this is called **non-volatile**). Examples include a **hard disk drive (HDD)**, which stores data on spinning magnetic disks, and a **solid-state drive (SSD)**, which stores data on fast electronic chips with no moving parts.
+
+| Feature | Memory (RAM) | Secondary storage (HDD / SSD) |
+|---------|--------------|-------------------------------|
+| Speed | Very fast | Slower |
+| Keeps data when powered off? | No | Yes |
+| Typical size | Smaller | Larger |
+| Used for | Programs and data currently in use | Files you want to keep |
+
+[insert image about the difference between RAM and a hard drive / SSD]
+
+### Worked Example
+
+**Task:** You write an essay in a word processor.
+
+1. While you type, the essay is held in **RAM** so the computer can change it quickly.
+2. When you click **Save**, the essay is copied to the **SSD**.
+3. When you shut down the computer, RAM is cleared, but the saved essay stays safe on the SSD.
+
+### Activity
+
+Decide whether each item is memory (RAM) or secondary storage:
+
+a. Holds a game while you are playing it
+b. Keeps your photos after you turn off the computer
+c. Loses its contents when the power is off
+
+<details>
+<summary><b>Answer</b></summary>
+
+a. **Memory (RAM)**
+b. **Secondary storage**
+c. **Memory (RAM)**
+
+</details>
+
+---
+
+## 1.2.4 Output
+
+### Explanation
+
+**Output** is the result the computer sends back to the user after processing. **Output devices** are the hardware that presents this result:
+
+| Device | What it does |
+|--------|--------------|
+| **Monitor** | Displays text, images, and video on a screen |
+| **Printer** | Puts text or images on paper |
+| **Speakers** | Play sound |
+| **Touchscreen** | Shows output and also accepts input |
+
+Output devices connect to the computer through ports, in the same way input devices do. Some devices, like a touchscreen, work as both input *and* output.
+
+[insert image about common output devices: monitor, printer, and speakers]
+
+### Worked Example
+
+**Task:** You press **Print** on a finished report.
+
+| Step | What happens |
+|------|--------------|
+| 1 | The CPU sends the report data toward the printer |
+| 2 | The data travels through a port (for example, USB) to the printer |
+| 3 | The printer turns the data into a page of paper |
+
+### Activity
+
+Name the best output device for each result:
+
+a. You want to hear a song.
+b. You want a paper copy of a form.
+c. You want to watch a video.
+=======
 ## 1.2.3 Output
 
 ### Explanation
@@ -448,10 +633,16 @@ Name the best output device for each result, and say whether a digital-to-analog
 a. You want a paper copy of a form.
 b. You want to watch a photo slideshow.
 c. You want to hear a voice message.
+>>>>>>> origin/topic-1.1
 
 <details>
 <summary><b>Answer</b></summary>
 
+<<<<<<< HEAD
+a. **Speakers**
+b. **Printer**
+c. **Monitor**
+=======
 a. **Printer.** No conversion is needed.
 b. **Monitor.** No conversion is needed.
 c. **Speakers.** Yes, a digital-to-analog conversion is needed to turn the digital audio into sound waves.
@@ -504,6 +695,7 @@ c. Storage that loses its contents when the power is off.
 a. **Primary storage** (RAM)
 b. **Secondary storage**
 c. **Primary storage** (RAM)
+>>>>>>> origin/topic-1.1
 
 </details>
 
@@ -513,6 +705,32 @@ c. **Primary storage** (RAM)
 
 ## Explanation
 
+<<<<<<< HEAD
+Computers come in many sizes. They all follow the same basic workflow (input, processing, storage, output), but they are built for different jobs.
+
+| Type | What it is | Examples |
+|------|------------|----------|
+| **Personal computer (PC)** | A computer made for one person at a time | Desktop, laptop |
+| **Smartphone / tablet** | A small, portable computer you control by touch | Phone, tablet |
+| **Server** | A computer that shares data or services with many other computers over a network | Website server, file server |
+| **Supercomputer** | An extremely powerful computer for very large calculations | Weather forecasting, scientific research |
+| **Embedded computer** | A tiny computer built inside another device to control it | Washing machine, car, smart TV |
+
+A **network** is a group of computers that are connected so they can share data.
+
+[insert image about different types of computers: desktop, laptop, smartphone, server, supercomputer, embedded device]
+
+## Worked Example
+
+**Task:** Which type of computer fits each situation?
+
+| Situation | Type of computer | Why |
+|-----------|------------------|-----|
+| A student writes a report at home | Personal computer | Made for one person's everyday use |
+| A video site sends movies to millions of viewers | Server | Shares data with many users over a network |
+| Scientists simulate a storm that may hit next week | Supercomputer | Needs huge calculating power |
+| A microwave controls its heating time | Embedded computer | A tiny computer built inside the appliance |
+=======
 Today, there are many kinds of computers, each made for different needs and jobs. They all follow the same basic workflow (input, processing, output, and storage).
 
 **1. Personal Computers (PCs)**
@@ -562,23 +780,38 @@ Today, there are many kinds of computers, each made for different needs and jobs
 | A student takes notes in different classrooms | Laptop | Portable, with a built-in screen and keyboard |
 | A company runs a website for thousands of visitors | Server | Provides services to many devices on a network |
 | A scientist models the climate | Supercomputer | Handles very complex calculations at high speed |
+>>>>>>> origin/topic-1.1
 
 ## Activity
 
 Name the type of computer in each situation:
 
+<<<<<<< HEAD
+a. A phone used to check the weather.
+b. The small computer inside a car that controls the engine.
+c. A powerful machine used to model how a new medicine works.
+d. A computer that stores and shares your school's files with all students.
+=======
 a. The small computer that controls the temperature inside a smart oven.
 b. A touchscreen device used for reading and watching videos on the couch.
 c. A computer that stores and shares your school's files with every student.
 d. A system used to simulate how a storm will move across the ocean.
+>>>>>>> origin/topic-1.1
 
 <details>
 <summary><b>Answer</b></summary>
 
+<<<<<<< HEAD
+a. **Smartphone**
+b. **Embedded computer**
+c. **Supercomputer**
+d. **Server**
+=======
 a. **Embedded system**
 b. **Tablet**
 c. **Server**
 d. **Supercomputer**
+>>>>>>> origin/topic-1.1
 
 </details>
 
@@ -590,6 +823,11 @@ d. **Supercomputer**
 - The **Turing model** shows that a computer's output depends on its input data and its program.
 - The **von Neumann model** splits a computer into **Memory**, **ALU**, **Control Unit**, and **Input/Output**, and stores programs and data together.
 - Computers have **hardware** (physical parts), **software** (programs), and **data**.
+<<<<<<< HEAD
+- Computers use **binary** (0s and 1s). **ASCII** turns characters into binary codes.
+- The basic workflow is **Input → Processing → Storage → Output**.
+- Computers come in many types, such as PCs, smartphones, servers, supercomputers, and embedded computers.
+=======
 - Computers use **binary** (0s and 1s). Each bit has a place value, and **ASCII** turns characters into binary codes.
 - The basic workflow is **Input → Processing → Output**, with **Storage** saving data along the way.
 - Output devices such as monitors, printers, and speakers present results, and speakers need **digital-to-analog conversion**.
@@ -1482,3 +1720,4 @@ Choose the best device for each situation and give one reason:
 - [ ] Calculate the size of a simple image or sound.
 - [ ] Compare RAM, ROM and cache.
 - [ ] Compare HDD, SSD, optical and USB storage and pick one for a task.
+>>>>>>> origin/topic-1.1
