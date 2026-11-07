@@ -22,7 +22,6 @@
     - [Chapter 3.3: AI in Robotics and Games](#chapter-33-ai-in-robotics-and-games)
     - [Chapter 3.4: AI Challenges and Limitations](#chapter-34-ai-challenges-and-limitations)
 
----
 
 ## Concise Plan & Status
 
@@ -30,34 +29,32 @@ This section provides a quick overview of the module's 8 chapters and their curr
 
 | Part | Chapter | Filename | Status |
 | :--- | :--- | :--- | :--- |
-| **Part 1: Hardware & Data** | 1.1 Number Systems and Data | `1-1-number-systems-and-data.md` | Outline only |
-| | 1.2 Hardware & Von Neumann Model | `1-2-hardware-and-von-neumann.md` | Outline only |
-| **Part 2: Networks & Security** | 2.1 Network & Internet Basics | `2-1-network-and-internet-basics.md` | Outline only |
-| | 2.2 Network Security | `2-2-network-security.md` | Outline only |
-| **Part 3: Behaviorist AI** | 3.1 Intro to Behaviorist AI & RL | `3-1-intro-to-behaviorist-ai.md` | Outline only |
-| | 3.2 RL Algorithms and MDPs | `3-2-rl-algorithms-and-mdps.md` | Outline only |
-| | 3.3 AI in Robotics and Games | `3-3-ai-in-robotics-and-games.md` | Outline only |
-| | 3.4 AI Challenges and Limitations | `3-4-ai-challenges-and-limitations.md` | Outline only |
+| **Part 1: Hardware & Data** | [1.1 Number Systems and Data](1-1-number-systems-and-data.md) | `1-1-number-systems-and-data.md` | Completed |
+| | [1.2 Hardware & Von Neumann Model](1-2-hardware-and-von-neumann.md) | `1-2-hardware-and-von-neumann.md` | Completed |
+| **Part 2: Networks & Security** | [2.1 Network & Internet Basics](2-1-network-and-internet-basics.md) | `2-1-network-and-internet-basics.md` | Completed |
+| | [2.2 Network Security](2-2-network-security.md) | `2-2-network-security.md` | Completed |
+| **Part 3: Behaviorist AI** | [3.1 Intro to Behaviorist AI & RL](3-1-intro-to-behaviorist-ai.md) | `3-1-intro-to-behaviorist-ai.md` | Completed |
+| | [3.2 RL Algorithms and MDPs](3-2-rl-algorithms-and-mdps.md) | `3-2-rl-algorithms-and-mdps.md` | Completed |
+| | [3.3 AI in Robotics and Games](3-3-ai-in-robotics-and-games.md) | `3-3-ai-in-robotics-and-games.md` | Completed |
+| | [3.4 AI Challenges and Limitations](3-4-ai-challenges-and-limitations.md) | `3-4-ai-challenges-and-limitations.md` | Completed |
 
 ---
 
-## Part 2: Chapters Breakdown & Learning Goals
+## Chapters Breakdown & Learning Goals
+
+### Part 1: Hardware & Data
 
 ---
 
-# Part 1: Hardware & Data
-
----
-
-### Chapter 1.1: Number Systems and Data
+#### Chapter 1.1: Number Systems and Data
 
 📄 **File:** `1-1-number-systems-and-data.md`
 
-#### Chapter Overview
+##### Chapter Overview
 
 > This chapter introduces what a computer is and how it works, from the basic workflow of input, processing, storage, and output down to the binary data it uses. You'll study number systems and data storage.
 
-#### Learning Outcomes
+##### Learning Outcomes
 
 By the end of this chapter, you will be able to:
 
@@ -66,7 +63,7 @@ By the end of this chapter, you will be able to:
 - Explain how numbers, text, images, audio, and video are stored as binary data.
 - Distinguish between primary (RAM) and secondary storage (SSD/HDD).
 
-#### Material
+##### Material
 
 | Stage | Topics |
 | :--- | :--- |
@@ -77,15 +74,15 @@ By the end of this chapter, you will be able to:
 
 ---
 
-### Chapter 1.2: Hardware and the Von Neumann Model
+#### Chapter 1.2: Hardware and the Von Neumann Model
 
 📄 **File:** `1-2-hardware-and-von-neumann.md`
 
-#### Chapter Overview
+##### Chapter Overview
 
 > This chapter covers the physical components of a computer and how they execute instructions using the Von Neumann model. It covers the physical components that make up a computer and how a program runs.
 
-#### Learning Outcomes
+##### Learning Outcomes
 
 By the end of this chapter, you will be able to:
 
@@ -93,7 +90,7 @@ By the end of this chapter, you will be able to:
 - Identify input, output, and internal hardware components, and explain the difference between internal and external hardware.
 - Explain how hardware components work together to execute a program.
 
-#### Material
+##### Material
 
 | Stage | Topics |
 | :--- | :--- |
@@ -104,19 +101,19 @@ By the end of this chapter, you will be able to:
 
 ---
 
-# Part 2: Networks & Security
+### Part 2: Networks & Security
 
 ---
 
-### Chapter 2.1: Network and Internet Basics
+#### Chapter 2.1: Network and Internet Basics
 
 📄 **File:** `2-1-network-and-internet-basics.md`
 
-#### Chapter Overview
+##### Chapter Overview
 
 > A computer network connects two or more computers so they can share data and resources. This chapter covers the parts of a network, the types of network, and how the internet works.
 
-#### Learning Outcomes
+##### Learning Outcomes
 
 By the end of this chapter, you will be able to:
 
@@ -125,7 +122,7 @@ By the end of this chapter, you will be able to:
 - Distinguish between LAN and WAN.
 - Explain how the internet delivers data using TCP/IP, IP addresses, and domain names.
 
-#### Material
+##### Material
 
 | Stage | Topics |
 | :--- | :--- |
@@ -136,22 +133,22 @@ By the end of this chapter, you will be able to:
 
 ---
 
-### Chapter 2.2: Network Security
+#### Chapter 2.2: Network Security
 
 📄 **File:** `2-2-network-security.md`
 
-#### Chapter Overview
+##### Chapter Overview
 
 > This chapter covers network security, explaining why it matters and how data is protected as it travels across the internet.
 
-#### Learning Outcomes
+##### Learning Outcomes
 
 By the end of this chapter, you will be able to:
 
 - Explain privacy, authentication, integrity, and nonrepudiation.
 - Match common protections to each security goal.
 
-#### Material
+##### Material
 
 | Stage | Topics |
 | :--- | :--- |
@@ -160,19 +157,19 @@ By the end of this chapter, you will be able to:
 
 ---
 
-# Part 3: Behaviorist AI
+### Part 3: Behaviorist AI
 
 ---
 
-### Chapter 3.1: Intro to Behaviorist AI & RL
+#### Chapter 3.1: Intro to Behaviorist AI & RL
 
 📄 **File:** `3-1-intro-to-behaviorist-ai.md`
 
-#### Chapter Overview
+##### Chapter Overview
 
 > This chapter explains how an AI system can learn behavior from experience. You'll start with what Behaviorist AI is and the basics of reinforcement learning (RL).
 
-#### Learning Outcomes
+##### Learning Outcomes
 
 By the end of this chapter, you will be able to:
 
@@ -180,7 +177,7 @@ By the end of this chapter, you will be able to:
 - Explain reinforcement learning in terms of agent, environment, actions, and rewards.
 - Distinguish model-based from model-free learning.
 
-#### Material
+##### Material
 
 | Stage | Topics |
 | :--- | :--- |
@@ -190,15 +187,15 @@ By the end of this chapter, you will be able to:
 
 ---
 
-### Chapter 3.2: RL Algorithms and MDPs
+#### Chapter 3.2: RL Algorithms and MDPs
 
 📄 **File:** `3-2-rl-algorithms-and-mdps.md`
 
-#### Chapter Overview
+##### Chapter Overview
 
 > This chapter introduces Markov Decision Processes (MDPs) and the algorithms built on them to calculate the best decisions.
 
-#### Learning Outcomes
+##### Learning Outcomes
 
 By the end of this chapter, you will be able to:
 
@@ -206,7 +203,7 @@ By the end of this chapter, you will be able to:
 - Explain Q-learning conceptually.
 - Understand the balance between exploration and exploitation.
 
-#### Material
+##### Material
 
 | Stage | Topics |
 | :--- | :--- |
@@ -216,22 +213,22 @@ By the end of this chapter, you will be able to:
 
 ---
 
-### Chapter 3.3: AI in Robotics and Games
+#### Chapter 3.3: AI in Robotics and Games
 
 📄 **File:** `3-3-ai-in-robotics-and-games.md`
 
-#### Chapter Overview
+##### Chapter Overview
 
 > This chapter covers how these methods are used in robotics and games, and looks at real-world applications.
 
-#### Learning Outcomes
+##### Learning Outcomes
 
 By the end of this chapter, you will be able to:
 
 - Describe how RL is used in robotics and games.
 - Give examples of real-world applications of Behaviorist AI.
 
-#### Material
+##### Material
 
 | Stage | Topics |
 | :--- | :--- |
@@ -241,28 +238,29 @@ By the end of this chapter, you will be able to:
 
 ---
 
-### Chapter 3.4: AI Challenges and Limitations
+#### Chapter 3.4: AI Challenges and Limitations
 
 📄 **File:** `3-4-ai-challenges-and-limitations.md`
 
-#### Chapter Overview
+##### Chapter Overview
 
 > This final chapter examines the challenges and limitations of the approach.
 
-#### Learning Outcomes
+##### Learning Outcomes
 
 By the end of this chapter, you will be able to:
 
 - Identify the main challenges of Behaviorist AI.
 - Describe the limitations of the technology.
 
-#### Material
+##### Material
 
 | Stage | Topics |
 | :--- | :--- |
 | **Stage 1: Challenges and Limitations of Behaviorist AI** | • Challenges (reward design, exploration vs exploitation, data and computing cost)<br>• Limitations (safety, generalization, explainability) |
 | **Stage 2: Chapter Exercise** | — |
-## References for Research
+
+### References for Research
 
 - [Cisco Networking Academy](https://www.netacad.com/)
 - [NVIDIA AI Resources](https://www.nvidia.com/en-us/ai/)
